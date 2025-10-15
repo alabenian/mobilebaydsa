@@ -1,0 +1,740 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{book}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={The Mobile Bay Labor Journal},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{The Mobile Bay Labor Journal}
+\author{}
+\date{\vspace{-2.5em}Founded May Day 2025}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\part{Preface to the Journal}\label{part-preface-to-the-journal}
+
+\chapter*{Introduction}\label{introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+The Mobile Bay Labor Journal (MBLJ) is a grassroots project initiated by members of Mobile Bay DSA in April, 2025, whose first issue was published on May Day to celebrate the history of working class organization across the world. Because it is a project of our members, Mobile Bay DSA supports it with this archive (at least, until an independent website is made) and features on our social media. The MBLJ is not managed as part of the chapter itself.
+
+\part{2025 Issues}\label{part-2025-issues}
+
+\chapter*{August 2025}\label{august-2025}
+\addcontentsline{toc}{chapter}{August 2025}
+
+A calendar of events for this month and voter guide for the upcoming election is included in the original issue, available as a \href{https://mobilebaydsa.org/newsletter/august2025.pdf}{PDF} or via the \href{}{Substack}. An official website for the journal is coming soon.
+
+\section*{Dear Readers,}\label{dear-readers}
+\addcontentsline{toc}{section}{Dear Readers,}
+
+Though the Journal will continue, I'm sad to say that my time as the designer for the Mobile Bay Labor Journal has come to a close. Thank you so much for the time we have spent together over the past five-ish months.
+
+The work we choose to do has a major impact on who we are. I believe in the work every one is doing here in Mobile, which is to say I believe in the community that you all are going to build with or without me, and am grateful to have taken part in it, at least for a small time and in a small part. Starting the Labor Journal with some close friends of mine seemed like a small passion project at the time, and yet I cannot believe what it has grown into and through what processes it has enriched my life and sense of community, solidarity, and awareness of Mobile and her beautiful soul. I have grown to love this place as I have been here, and I couldn't have done it without the strength, courage, and feedback of our community. My time in Mobile would not have been the same without the diligent efforts of the Labor Journal and the people that worked to make it happen.
+
+Although I am sorry to leave and with such an unexpected goodbye, I will always be grateful to the Labor Journal for offering such meaningful engagement with the community I live in and encouraging such generous connection with the people around me.
+
+bell hooks said ``the heart of Justice is truth telling, seeing ourselves and the world the way it is rather than the way we want it to be''. We have an obligation to Justice, and therefore an obligation to truth telling. My aim for the Labor Journal is to fulfill that obligation to truth telling through shared passions for writing, curiosity, a desire to tell interesting stories, and a wish to build a better world, which is at the heart of liberation for all peoples.
+
+As a last call, I would like to extend an ask to anyone who might be interested in contributing to the design work of the Labor Journal, or supporting our efforts in general. Please feel free to reach out to us at \href{mailto:mobilebaylaborjournal01@gmail.com}{\nolinkurl{mobilebaylaborjournal01@gmail.com}}. Thanks again to all.
+
+With Love, Your Designer,
+
+\emph{Alex Ames}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section*{Sympathy for the Parents: The Truth about Parental and Religious Liberties}\label{sympathy-for-the-parents-the-truth-about-parental-and-religious-liberties}
+\addcontentsline{toc}{section}{Sympathy for the Parents: The Truth about Parental and Religious Liberties}
+
+\emph{by Gracchus}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Most readers may already be familiar with the ongoing challenges faced by the Alabama Public Library Service (APLS) and others across the nation. Groups like the Alliance Defending Freedom, the Alabama Policy Institute, Clean Up Alabama, and Moms for Liberty have made a concerted effort over the past four years to alter both the content of public library collections and the rules around the discussion of gender and sexuality in public schools. They pursue these restrictions under the guise of parental rights, religious liberties, and protecting their first amendment right to free speech. While the religious liberties argument is a tried and true dog whistle for the reactionary right (parochial schools during desegregation, denial of services to the LGBTQ+ community, corporations restricting their health plans' access to contraceptives, etc.), the parental rights argument is somewhat newer.
+
+Until relatively recently, parental rights have been somewhat uncontroversial as they lacked the reactionary connotations of religious liberties and were hitherto mainly applied in extreme or unusual cases, such as an exemption from high schools for the Amish in Wisconsin v. Yoder (1972). The current character of the parental rights movement finds its roots, alongside most of our problems, in the Reagan era neo-conservative revival. Evangelical Christians, bolstered by the first MAGA president, pushed for the restriction of sex education in public schools, in part as a reaction to growing LGBTQ+ rights. In general, parental rights used to be more about the parents' rights to withdraw or opt-out their children from certain programs or institutions altogether, barring some McCarthyist exceptions. This took the form of alternatives to public education, not rewriting the curriculum of public institutions. From the Reagan era onwards, it has become about broadly constricting public institutions in order to conform to the ideology of parental and religious rights advocates.
+
+This change and its consequences are abundantly clear in the nature of the debate today. Take, for instance, the fight between Read Freely Alabama and Clean Up Alabama / Moms for Liberty in Prattville. Read Freely, regardless of their disagreement, does not dispute a parent's right to restrict what books their children can read, what books are allowed in the home, how and when parents dictate internet usage for their children, or what values parents impart on their children. Conversely, Clean Up Alabama and Moms for Liberty want to restrict access to some books in public libraries citing ``alternative sexualities'' and ``alternate gender ideology'', labels sex education books intended for teenagers as pornography, and demands the total withdrawal of state funding for libraries who do not follow their diktats to the letter. This isn't about what their own kids can or can't read, it's about censoring information to other people's children and to the general public at large. As of June 17, the Fairhope Public Library, long under siege, has reshelved five of the fifteen challenged books in their collection after lengthy committee deliberation, but the reactionary extremists who have usurped the APLS at the behest of Moms for Liberty and Clean Up Alabama still refuse to reinstate tax-payer funding. On this issue we must hope that it does not go the way of the Serapeum.
+
+The moral crusade against city and school libraries is not the only damning indictment of parental and religious liberties. It is important to note that in Wisconsin v. Yoder the issue was never the adoption of a curriculum which challenged the plaintiff 's religious beliefs, but rather the ability to totally withdraw from an institution which did adopt such a curriculum. The recent Supreme Court decision in Mahmoud v. Taylor allowing for parents to opt-out their children from lessons which include LGBTQ+ friendly topics is a travesty and a willful misinterpretation of precedent by Samuel Alito, a longtime ally of the reactionary right. Similarly, Rebecca Watson, founder of the Baldwin County Moms for Liberty chapter, made her initial mark on local politics in 2023 with a tirade against a ``public'' drag show in Fairhope, which was held in a private venue. The follo ing year, 1819 News published her opinion piece ``God Showed Up for Gay Pride'' in which she makes clear her opposition to any public display of LGBTQ+ pride, especially on taxpayer funded properties, on the grounds that any deviation from heteronormativity is obscene and unchristian. Watson defends her views by claiming that she doesn't care if her neighbor is gay, just as long as they don't talk about it.
+
+The most insidious aspect of this plot against our society is the rhetorical trickery and obfuscation employed by its conspirators. They claim to defend liberty and preserve freedom of speech, in which they are only partially correct. This partiality reveals the true depravity of their argument, its deception, and its true goals. They do not preach freedom, but instead servility. They do not covet liberty, but instead silence. Duplicity is their creed and demagogues their masters. They seek to return Rome to Tarquin.
+
+The main defence employed by Moms for Liberty and associated groups when confronted with criticism is that their critics are overreacting. They claim that woke ideologues are denying them their rights and that they are simply defending liberty. To the apolitical onlooker this initially appears to have some validity. Currently, these groups are not arguing to ban books, but to reshelve them, often into restricted sections. They are not arguing against the existence of the LGBTQ+ community, but their infringement into public spaces where children may or may not be present. Here one should refer back to Lenin, ``Freedom yes, but for whom to do what? Bourgeois-liberal democracy is obsessed with freedoms, but without a distinction between formal and actual freedoms. Formal freedom may be understood as negative freedom, freedom from oppression or coercion, while actual freedom may be understood as positive freedom, the freedom of ability for individuals to achieve their goals. To paraphrase Olivier de France from his essay The Contested Concept of Freedom, actual (positive) freedom puts governments into the role of ensuring that people have the resources and opportunities which otherwise may be denied them due to economic or social constraints.
+
+Should the MAGA conservatives and religious fundamentalists have their way, the formal freedom of speech will be preserved while the actual freedoms that underlie it will be reserved for themselves. LGBTQ+ individuals will be formally free to speak and criticize as they wish, but they will be denied any public forum in which they might be heard, lest said forums be populated by overprotected children. In this way the freedom of speech employed by MAGA conservatives and religious fundamentalists effectively means the freedom to oppress those they dislike while silencing minority voices and critics. It is no coincidence that this line of argumentation has coincided with the deregulation of hate speech.
+
+Taken with Simone de Beauvoir's The Ethics of Ambiguity, this faulty argument becomes more obvious. The most striking assertion Beauvoir makes in her work is that to exercise one's freedom without regard for or in direct opposition to the freedom of another is to actively engage in oppression. To quote her directly,
+
+``A freedom which is interested only in denying freedom must be denied. And it is not true that the recognition of the freedom of others limits my own freedom: to be free is not to have the power to do anything you like; it is to be able to surpass the given toward an open future; the existence of others as a freedom defines my situation and is even the condition of my own freedom. I am oppressed if I am thrown into prison, but not if I am kept from throwing my neighbor into prison.''
+
+Is this not a stake to heart of the modern parental rights argument? They argue for the suppression of peoples' actual freedoms while their opponents simply seek to preserve their own. Few, if any, are arguing for the dissolution of private or parochial schools, however distasteful they may be. While there has been a great deal of criticism of the conservative homeschool movement, there has been no concerted effort to do away with homeschooling that is comparable to the nationwide attacks spearheaded by the Alliance Defending Freedom or Moms for Liberty.
+
+Religious fundamentalists have a right to shield their children from the facts of our multicultural society within their homes, even though it is grave disservice to their children. However, to demand that public institutions cater to their conservative snowflake attitude is an egregious violation of the principles on which public education is based. If an individual or group is unable to handle coming into contact with alternative viewpoints which may challenge their worldview or other deeply held beliefs they should opt-out of general society, not bend it to their own whim and will. Rebecca Watson and her ilk are akin to Bram Stoker's Renfield, a madman who sees in the murder of others a path to his own immortality. They subvert the freedoms of others in order to maintain their own false freedom, a freedom to impose and oppress. Real, radical, emancipatory freedom is not the unchecked terror of Dracula's reign, but the sunlight which disintegrates and banishes him from this earth.
+
+\section*{Mobile Mayoral Candidates Provide Materials for Public Benches}\label{mobile-mayoral-candidates-provide-materials-for-public-benches}
+\addcontentsline{toc}{section}{Mobile Mayoral Candidates Provide Materials for Public Benches}
+
+\emph{by HollyRose Baker}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+In a rare cross-partisan agreement, every candidate in the Mobile mayoral election has come together to distribute supplies for public works to strategic points around the city.
+
+These supply drops consist mostly of 6 to 8 foot long 4x4 wood beams, various lengths of 2x4s, sign boards, and a few fasteners (mostly bolts, nails and screws). It is the hope of these good candidates that such materials will be used to provide the public works that they themselves regrettably lack the political will and ability to construct. ``It's a community initiative,'' said an anonymous su porter of one candidate, ``we want the community to get involved and do it instead of us.''
+
+These materials are perfectly suited to the particular application of bus stop seating and awnings, and many city residents are planning to utilize them to build such structures as soon as each candidate ceases to need advertising.
+
+There have been some concerns, however, that this initiative is public sector government overreach, and that it might displace local multinational corporations' current market monopoly on roadside squatting opportunities. For the past thirty years, bus goers have relied on the ever giving shopping cart - `donated' by local Greers and Walmarts - for all of their sitting needs.
+
+``When you turn the cart on its side,'' said one attempted bus rider, ``you can almost sit on it.'' After a moment of contemplative reflection, he continued. ``That's why they call it the WAVE, maybe, mayhaps\ldots{} 'cause when you are on that shopping cart, sliding down its tilted sides, waiting an hour-fifty-five for that big bus to arrive, you can almost imagine you're surfing. The wind in your hair from the passing cars. The up and down of your butt on the metal grate of the buggy. It's a spiritual experience. It's like you're out in the ocean waiting to drown. Beautiful.'' He went on to say that he has never managed to catch the WAVE. Still, he continues towards self improvement, and hopes to rise to the occasion of public transport someday.
+
+Several local realtors have thrown their hat into the ring, trying to prove that business can outdo government any day. They have provided free branded tarps for the use of any homeless person or truck owner who can simply acquire a boxcutter to separate the ziptie packaging from the buried metal T-stakes they are mounted on for display. Others have given nice 6x6 painted wood beams, with dangly decorative chains and sign boards, free to anyone with a shovel and a dream. They have kindly placed these signs outside of all empty homes and unused properties in case local squatters need help finding places to stay.
+
+The dark twin shadow version of the soon-to-be-retired Mayor - Standy Simpson - has added that he hopes community members will put aside their petty needs and personal hopes for public services, and instead focus on their civic duty to the civic center. He plans to be buried there like a pharaoh of old, alongside the ill-gotten gains of his family's sordid fortune, which he will take with him to the afterlife. He said ``We want to conserve as much cash as the city has, just because, just out of prudence,'' presumably in reference to the massive burial chamber he has constructed for himself and his wealth underneath the upcoming Civic Center.
+
+The selection of a new Mayoral God-King is a time when many rise to the occasion and do the hard work for their community, and we here at the Mobile Bay Labor Journal are happy to see that the candidates have all teamed up so diligently to provide such meaningful resources as campaign signs. We encourage our readership to use these resources wisely, because, without a doubt, this is the last time we will see such a giving attitude from any of the candidates.
+
+\subsection*{Instructions for Bench Building}\label{instructions-for-bench-building}
+\addcontentsline{toc}{subsection}{Instructions for Bench Building}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Gather campaign signs and the wood they are mounted on,
+\item
+  Check for damage,
+\item
+  Find a bus stop that needs a bench,
+\item
+  Go to \emph{urbanistsociety.com}, and look over their illustrated instructions for building public benches out of scrap wood (called Chattanooga Benches),
+\item
+  Pop open a cold beer, and chill on your nice new sick ass bench for a few hours while you wait for the bus.
+\end{enumerate}
+
+\section*{A Native Flower for your Yard!}\label{a-native-flower-for-your-yard}
+\addcontentsline{toc}{section}{A Native Flower for your Yard!}
+
+\emph{by HollyRose Baker, cofounder of the Lower Alabama Native Plant Society}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection*{Why Plant Milkweed?}\label{why-plant-milkweed}
+\addcontentsline{toc}{subsection}{Why Plant Milkweed?}
+
+The Asclepius family (milkweeds) are the host plants for monarch butterflies. Monarchs migrate across North America throughout the year in a journey that takes several generations. Part of how they know where they are, and where to travel, is based on which milkweed species are present. Having the wrong milkweed species in the wrong area can also spread more diseases among monarchs. This is why it's important to only plant milkweed species native to our area.
+
+\subsection*{Wild Growing Conditions}\label{wild-growing-conditions}
+\addcontentsline{toc}{subsection}{Wild Growing Conditions}
+
+This plant can be seen growing in areas that have experienced a controlled burn. Historically, this plant was common in Spring Hill, Cottage Hill, Satsuma, Semmes, and elsewhere in North and West Mobile County, especially in the rolling hills and sandhill subtypes of the longleaf pine savanna ecosystem. It cannot survive well in closed canopy forests.
+
+\subsection*{How to Purchase and Plant}\label{how-to-purchase-and-plant}
+\addcontentsline{toc}{subsection}{How to Purchase and Plant}
+
+It's widely available, but you want to make sure you aren't getting the Northeastern or Midwestern subspecies. There is also a lot of milkweed fraud, selling tropical milkweed and claiming it's local, so buying from a trusted source is an absolute must. It does not transplant well. Buy either seeds, dormant roots, or very young plugs. When growing from seed, follow the Prairie Moon germination guide. We recommend Kim's Nursery in Wilmer Alabama for buying this plant.
+
+\subsection*{Planting Details}\label{planting-details}
+\addcontentsline{toc}{subsection}{Planting Details}
+
+Asclepius Tuberosa gets 1--3ft tall, and likes plenty of sun. It needs a dry, well-drained location. It comes back year after year, and flowers throughout the summer. It has a long tap root that can extend down many feet, which makes it drought tolerant as it gets older. It's not aggressive. The orange flowers look good beside pink swamp milkweed, roundpod St.~John's wort, and mallow.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\includegraphics[width=2.16667in,height=\textheight,keepaspectratio]{milkweed.png}
+
+\textbf{Butterfly Milkweed}
+
+\emph{Asclepias Tuberosa}
+
+\emph{varieties tuberosa and rolfsii}
+
+Learn more by looking at the Flora of the Southeastern United States webpage!
+
+\chapter*{July 2025}\label{july-2025}
+\addcontentsline{toc}{chapter}{July 2025}
+
+A calendar of events for this month is included in the original issue, available as a \href{https://mobilebaydsa.org/newsletter/july2025.pdf}{PDF} or via the \href{https://viktorzaltys.substack.com/p/mobile-bay-labor-journal-989}{Substack}. An official website for the journal is coming soon.
+
+\section*{June 14: Solidarity and Disappointment}\label{june-14-solidarity-and-disappointment}
+\addcontentsline{toc}{section}{June 14: Solidarity and Disappointment}
+
+\emph{by Viktor Zaltys}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+June 14th's ``No Kings'' day marked one of the largest protests in Mobile's history, with about 2,200 participants, according to one of the organizers, more than tripling the attendance from the previous Trump administration protest in May. This number surpassed 1\% of the population of the City of Mobile, while still falling short of the 3.5\% that participants interviewed hoped to see. This is a reference to the work of Erica Chenoweth, a political scientist at Harvard University who has studied historical non-violent mass movements. ``There weren't any campaigns that had failed after they had achieved 3.5\% participation during a peak event,'' says Chenoweth. Examples include the Singing Revolution in the Baltics in the 1980s and the Rose Revolution in Georgia in 2003. The ``No Kings'' protest was organized explicitly in opposition to executive overreach, as well as the military parade planned in Washington, DC, which celebrated both the Army's 250th anniversary and President Trump's 79th birthday. After speaking with many of the local protestors, it was clear that there was significant discontent with the Trump administration's treatment of immigrants, particularly the suspension of due process during the deportation process.
+
+Since protests in Los Angeles erupted in early June, the conversation has changed around the grassroots movement in the Mobile Bay area. During the previous protests (covered in MBLJ's first issue), it appeared that not many locals even knew what was happening. Of the people interviewed at the Mobile County Republicans meeting in April, almost none knew the ``Hands Off'' protest had even occurred. However, when Los Angeles became the center of immigration protests, with President Trump calling in the National Guard and Marines, local officials took a tougher stance. In the lead up to the second ``No Kings'' protest, Mobile County Sheriff Paul Burch said the following during a monthly radio show ``Ask the Sheriff '': ``I can tell you that if they do that in Mobile, Alabama, the orthopedic hand surgeons are gonna have one hell of a weekend to start fixing hands. Because that barricade can become a weapon.'' The Sheriff walked back his statements after pushback from organizing group Indivisible. Members stated, ``We don't even leave any trash behind.'' Sheriff Burch responded that he was answering a hypothetical question and didn't believe that anything would happen in Mobile like that.
+
+After national coverage of Los Angeles's struggles, ``No Kings'' participants had a more unified grievance than during previous protests. Before, concerns were split between healthcare, Social Security, federal workers, immigrant rights, to even NATO. This time the main concern, by far, was immigrant rights. When asked what demands they have for local officials, most protesters stated that they would like for Mobile to adopt ``Sanctuary City'' status, barring local and county law enforcement from assisting ICE the way that the Baldwin County Sheriff 's Department has.
+
+Most of the participants interviewed were also uninspired by Indivisible's charge to call Republican Representatives. One participant said that the state is so solidly red that ``I'm talking to a voicemail box I know will never be heard.'' A pro-ICE counter-protester punched a peaceful protester as Mobile residents marched from Government Plaza to Spanish Plaza. As national coverage continues to bring these issues home, more opposition to the movement can be expected, even locally. How the organizers will address the concerns of protestors' unaccomplished goals alongside increased opposition, only time will tell.
+
+\section*{Accessibility in the Port City}\label{accessibility-in-the-port-city}
+\addcontentsline{toc}{section}{Accessibility in the Port City}
+
+\emph{by Carissa Foster}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+For the average Mobilian walking the City streets and stepping onto a curb, over a crack or gap in the sidewalk, and across a street intersection, it is done easily, without much thought. However, for a mother using a stroller for her baby, a wheelchair user, or a visually impaired person, these seemingly minor flaws in accessibility can be major inconveniences and safety concerns.
+
+Considering how much capital the City is willing to invest into new projects designed to attract both tourists and new residents, critics say that current infrastructure could be preventing accessibility for some of these potential target audiences. Though, that is not to say the City has done nothing to work towards providing accessible spaces for their residents and visitors.
+
+After the ADA (Americans with Disabilities Act) was enacted in 1990, Mobile was one of many cities forced to evaluate their facilities and infrastructure to ensure all citizens would have equal access, not only to employment, but also to their community spaces. In 1993, the City of Mobile worked on identifying gaps in accessibility to create and implement working lists that would improve upon areas of concern. The resulting transition plan brought about many positive changes to the City. Through the late 90's there were informative brochures and accessibility guides created, as well as a forum for disabled citizens. Disability awareness training for City employees also became available. In the early 2000's, input was taken from the public, and the Mobile Transit Paratransit Service was formulated for individuals with disabilities that were unable to utilize the traditional bus system. Additional training and resources were also provided to address emergency response and sheltering for disabled citizens. With the late 2000's and 2010's came new funding for interpreting services for the deaf, along with other accessibility devices, as well as websites and forums to increase public awareness and input on the accessibility of the City.
+
+Then, in 2016, a new transition plan was created to address the new ADA requirements. Residents of the City of Mobile could request sidewalk repairs and other services through the City's 311 phone service or app according to the new plan. Unfortunately, there is no evidence on the City's site that any progress has been made since the initial plan proposed in August 2016 with required yearly reports. Including no information on the actions or contact information of the city of Mobile's Advisory Commission on the Disabled.
+
+Instead, publicly, Mobile relies on having residents independently look into organizations that address their needs. Like the Independent Living Center of Mobile, the VA, or The CORE Project. Part of accessibility is defined as the inclusion of information, and in that regard, Mobile has not maintained its own promises. Dividing the solidarity that the community has historically used to advocate for all, must instead advocate alone.
+
+These lines that make up the only organized advocacy and support for the City's most vulnerable have faced threats to their grant funding with mass cuts from DOGE. These grants were deemed as unnecessary DEI programs. If outsiders won't help make Mobile a fair and accessible city, then only Mobilians can demand the change for all its citizens to live in a city everyone can call home.
+
+\section*{Another Push to Stop the Replacement of the LLV}\label{another-push-to-stop-the-replacement-of-the-llv}
+\addcontentsline{toc}{section}{Another Push to Stop the Replacement of the LLV}
+
+\emph{by Viktor Zaltys}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+By far the most popular federal agency in the United States is the U.S. Postal Service. According to Pew Research, the Post Office has a 91\% favorability among Americans, followed by CDC at 79\% favorability. Commonly associated with the phrase ``Neither snow nor rain nor heat nor gloom of night stays these couriers from the swift completion of their appointed rounds,'' engraved on the New York City Post Office as a reference to the Persian Empire Couriers, as documented by the Greeks. It is a testament to the efficiency of one of the greatest logistical infrastructures in the world, with 44\% of the world's mail volume processed and delivered by the U.S. Postal Service. Touching almost every aspect of our life, certain things come to mind when thinking about the Post Office. One of the most iconic is the Long Life Vehicle (LLV), the staple of mail trucks since they were first made in 1986. With new production of LLVs ending in 1994, the Post Office has long been cannibalizing LLVs in attempts to maintain the fleet. These vehicles are so old and used that they can no longer be sold at auction. Unless they are being operated by the Post Office, they are no longer considered road safe. This is where the Next Generation Delivery Vehicles (NGDV) come in.
+
+The NGDV is the much-delayed answer to the Post Office's consistent requests for a new fleet of vehicles since 2015. The projected late-2024 rollout saw a stall after the election. Republican politicians widely want to bring this 10-year delayed replacement of the LLVs back into discussion. Why? Concerns over the NGDVs being electric vehicles. This objection, as of now, has been put to rest, as the U.S. Senate Parliamentarian stated that it would require a super- majority to reverse purchase of NGDVs this late in the process.
+
+This is good news for local Post Offices, as many smaller offices like Bay Minnette don't have vehicles to replace an LLV if it breaks down. They end up relying on Rural Carriers, most of which are required to use their personal vehicles. Even with the current proposed fleet approved by Congress, you will still be seeing LLVs for a long time as they get transferred over to some Rural Routes. Carriers I have spoken to - City and Rural alike - still have a love for the LLVs and look forward to the transfers, even if they don't have the NGDV features, like A/C, bluetooth, or airbags.
+
+However, this is only one challenge the Post Office has faced since 20th of January, 2025. There have been talks from Republican leadership like Donald Trump about privatizing the U.S. Postal Service. Coupled with that, the new Postmaster General, David Steiner, a current FedEx board member and proud union buster, set to lead the largest unionized workforce in the United States. The American Postal Workers Union (APWU) has responded to the choice, likening it to ``choosing a fox to guard the hen house.'' This is not the first time the Post Office has faced the threat of privatization and union busting. How a local 23-year career City Carrier put it, ``They have been trying to plunder the public mail service since 1775. They failed then and they'll fail now, as long as we have the people on our side.''
+
+\section*{Our Queer Ecosystem: A Brief Overview of Gay History in Mobile, Alabama}\label{our-queer-ecosystem-a-brief-overview-of-gay-history-in-mobile-alabama}
+\addcontentsline{toc}{section}{Our Queer Ecosystem: A Brief Overview of Gay History in Mobile, Alabama}
+
+\emph{by HollyRose Baker}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+After the Stonewall Rebellion, queer people around the world began to organize. In some places, this came in like a rogue wave, with huge numbers of people coming out and fighting for their rights. In others, places like Mobile, Alabama, it was more like a steady rising tide.
+
+There had always been a subtle presence of queer life here. There were gay couples and friend groups, places people would congregate, and small pockets of support. But the Uprising left people wanting more.
+
+In Mobile, this began in the bar scene.
+
+``The only place to hangout was the Princess Lounge\ldots{} across from the Presbyterian church downtown.'' Says Robert Sanborn, a gay man who came to Mobile in 1969, who would later go on to help found Mobile Aids Support Services. ``There was a little bar that was gay friendly called Miss Betty's,'' he added, ``They were a private club, which means they could serve drinks after midight, `cause it required paid membership.''
+
+Gay folks at the time had their bar, and their private club, but much of queer life was still shrouded in secrecy and fear. In those early days, there were no local queer events that he can recall. When asked what it was like to be queer in Mobile at the time, Mr.~Sanborn sighed, and said,
+
+``Extremely repressed. I had a lover at the time, and we socialized with other gay people, but certainly were not open in any way\ldots{} there was no sense of solidarity in the area.''
+
+He went on to talk about the lack of integration in the gay community of the time. ``There were few black people involved in the community\ldots{} I worked primarily in black schools for many years, and I would say that the majority of gay people I knew of in the black community were very much on the down-low\ldots{} I think for them it was more risky\ldots{} there were some people who were active in the gay community that happened to be black, but they were very few and far between.''
+
+This isn't to say that there were no black gay hangouts in Mobile at the time, but I think it's important to note that the white gay folks didn't seem to know about them. Fear and repression breed secrecy, and the tangibility of segregation led black gays to have little trust for their white counterparts. Nearly everyone I interviewed or spoke to for this project highlighted how the legacy of segregation has had a lasting effect on the queer scene of our city. This should be unsurprising to us; the context of queerness in the south is always going to be intersectional, and membership in one marginalized group does not inherently make someone educated on the struggles of another.
+
+What might surprise our readership, however, is that Mr.~Sanborn was out to his religious community at the time. He joined the Unitarian Universalist Fellowship of Mobile in 1973. ``It was a place where you could be very free and open. In the 70's,\ldots{} there were a fair number of gay and lesbian members in the church. The church was very accepting. I was openly gay as far as the church was concerned.'' He went on to serve on the board of the fellowship for 15 years.
+
+It was two or three years after he joined the UUFM that Mr.~Sanborn remembers any queer organizing happening in the city. In 1975 or `76, there was a group founded called the Gulf Alliance for Equality. ``It was more of a social group'' according to Mr.~Sanborn, but ``it was the first group that organized.''
+
+It would not be the last. In the coming times, queerness in Mobile would percolate into the formation of more and more pockets of gay life.
+
+Five years later, the Order of Osiris began. Osiris was not the first attempt at a gay Mardi Gras troupe in Mobile, but it was the first one to stick, and it is still a thriving part of Mobile's queer community today. Isabel Machado explores the history and legacy of Osiris in ``Never too big, Never too much,'' which is a must read for any local queer history enthusiast.
+
+We aren't sure when Pride parades began happening in Mobile, but thanks to a single surviving wooden doubloon, we do know there was one in 1982. Later on in the 80's and early 90's, some of the treasured elder drag queens that we in Mobile still know and love today were being honored as Miss Mobile Gay Pride - Queens like Venus Shante DaVis, who was honored again for her contributions to the queer community at last years' Come Out Mobile gala.
+
+These early Prides were events of a few hundred people, often parading around Bienville Square, or down at the Fruit Loop, which was a circle of gay bars that had begun to form downtown. But they are the backbone and taproot for the many grand Pride events Mobile has to offer today; events like the Rainbow Pride of Mobile vendor fair, the Pride Family Picnics, Bent Broadway, Pride Art Walk and its' Peoples Parade, Trans Day of Remembrance, the Wig Walk, and Translucent.
+
+In 1985, Cornerstone Metropolitan Community Church was founded, with the explicit goal of being a church that is affirming to queer people. It is still in operation, and Rev.~Marge Ragona, its founding minister, has just returned to Mobile to celebrate her 96th birthday. She is to be interviewed and honored by Prism United for her lifetime of work.
+
+What I see in the stories of people like Mr.~Sanborn, the Order of Osiris, and Cornerstone MCC is that we, here - in our little city by the bay - are and were a clear part of a larger movement to build gay life into something that could be more than just hiding. But, also, that here in the south, we did it in our own way - through Mardi Gras balls, parades, and a flair for the Sunday church service. We had supper clubs and house parties, and we drank at bars together. It is a life not too different from what many of us have now.
+
+But in the backdrop of all these stories, there is a looming threat.
+
+The fact is that so much of what these organizations did in those early days is unknown, and unknowable to us. We are very, very lucky to have people like Mr.~Sanborn here to tell us these stories at all. Many of his contemporaries passed far before they got old enough to reminisce. The HIV and AIDS epidemic burned through Mobile, wiping away much of our community, and our history.
+
+Even as it burned, there were diligent people fighting to put out the fires. Here is Chance Shaw, the current Director of Outreach and Prevention at Aids Alabama South, describing the community response.
+
+``Lee Simmons was the first person in Mobile known to die of AIDS related illness. Right after he passed, a bunch of his lesbian friends got together, and they formed the Lee Simmons Fund For People With Aids. The idea was, they got everybody to contribute a little bit, and they would go and they would help take care of their gay friends that were dying, that were losing their homes and their livelihoods - their health - and they would help take care of them in those final months and years, so that they didn't have to be alone, and be destitute. They were the ones in Mobile that, you know, held people's hands, and made sure that someone remembered their birthday, and someone called their mom when they did pass\ldots{} that someone was there to accept their remains, and make sure that they got a proper burial.''
+
+The Lee Simmons Fund began in 1984, coordinating with queer people locally, medical professionals, and volunteers from the UUFM and Cornerstone MCC. The Fund would go on to have several successor organizations, growing out of its membership. In 1988, Mobile Aids Support Services began operating as a more formal organization providing care. It was initially funded privately by a city official at the time, until Robert Sanborn wrote the grant that secured its future. Him, Diane Hampton, Vernon Moore, and Julie Clifton were its founders. In the 90s, Kathy Hiers became the director of the organization, before moving on to work for Aids Alabama in the early 2000s. In 2011, Aids Alabama acquired the assets and practice of Mobile Aids Support Services, establishing Aids Alabama South, which still exists today.
+
+The AIDS epidemic devastated our communities, but it did not end them. Sometimes, it caused our people to circle closer to one another, and to build even more.
+
+Mr.~Sanborn put it like this; ``The first full time executive director {[}of Mobile Aids Support Services{]} was Marsha Wood. Marsha was a good old southern lady with lots of contacts all over the community. One of the things we had in Mobile was a great deal of Aids in the black community. She was able to draw a lot of the leaders of the black community into Mobile Aids Support Services, and provide an opportunity for them to receive the case management services.'' He went on to describe how this led to more involvement from the black gay community and black women locally in HIV prevention, treatment, and response.
+
+Local lesbians, many of them AIDS relief workers, traveled back and forth between here and Hattiesburg, coalescing at a land project/commune known as Camp Sister Spirit. On weekends and birthdays, they came together to enjoy each other's company, and began having the locally famous Lesbian Libra Parties of the late 90's and early 2000's. They even founded a community center, called Bay Area Inclusion, whose members remember having had events nearly every day. They fixed each other's houses, had potlucks, held trans support groups, and did any number of other gay events over their decade or so of existence. BAI closed in 2008, but many lesbians of a certain age can trace back most of their friendships to those hallowed days.
+
+Cari Searcy is one of those lesbians. She moved to Mobile in 2001, and recalls the community of that time fondly. For her, however, the end of BAI wasn't the end of the push for queer rights. It was just the beginning. Herself and her partner at the time, Kim, would go on to face a ten year legal battle. They were married in another state, but when the time came for Cari to be put on the birth certificate for the son they had together, Alabama refused. After a long, hard struggle, they won their case, legalizing gay marriage in Alabama --- as well as second-parent adoption for gay and lesbian parents.
+
+Cari is a treasure to talk to, and can be found at nearly any local queer event - but the curious queer learner might also want to watch the documentary that covered her story, Alabama Bound.
+
+When asked about the state of the queer community of Mobile today, this is what she had to say;
+
+``It's crazy to see how much things have changed, and how this younger generation is reacting. It's hard to look at this current administration, and it's worse now than it ever has been. But the reaction of queer people - I mean, that change in the past ten years has been amazing. We still have a long way to go, as far as educating each other, and realizing it's all part of the same thing, and that we can come together in those aspects.'' She goes on to add. ``It's all about in-person community\ldots{} Everybody needs that\ldots{} We are all craving that''.
+
+Still, she says that the gays and lesbians she knows aren't always educated about trans people, and she worries that black and white queer people still haven't quite come together.
+
+``And I am scared,'' she says. ``We aren't even protected by laws any more. But our community here is so strong. I think we have to focus on that, on building that, instead of focusing on where we lack it. There's a history, people have come out of Mobile for every gay movement.''
+
+One of the people in Mobile today who is focusing on that strength is Myah Turner. She is the Founder of the Black Butterfly Collective, a group dedicated to providing friendship and services to the black trans community in Mobile and beyond.
+
+``I worked for an organization before this work, and one of the things we highlighted was HIV among trans women of color. That became the biggest priority. I wanted to be in a space where I can highlight trans joy\ldots{} How do we take care of people beyond these test results or these preventative measures? How do we make them feel seen? How do we help them out in life - when they're dealing with houselessness, or not having food, or anything like that. So, the Black Butterfly Collective was simply birthed for trans joy, healing, and wellness.''
+
+Myah has spent the last year or so going to events and meeting with queer community leaders in Mobile, quietly evaluating spaces to see if they are safe and supportive for her fellow black trans friends. ``I only try to bring the girls into places that I have already vetted as trusted people and trusted spaces. I understand that that is just life in Mobile, it does tend to be segregated. But it doesn't always have to end that way. We can start, as the new generation - as the new patriarchs and matriarchs of Mobile, the new leaders of Mobile - we can start maneuvering ourselves into a space that is more conducive and inclusive for all people.''
+
+As I look back on the myriad of conversations I've had for this project, I cannot help but agree with her. The trajectory of queer history in Mobile is in our hands now, just as it was in the hands of those movement ancestors who came before. It is how we choose to organize and conduct ourselves that will shape what is to come here.
+
+She went on to talk about preparedness, saying that LGBT people need to work on acquiring reserves of our medicines; not just Hormone Replacement Therapy, but also things like PrEP, which helps prevent HIV transmission.
+
+``We need to have these resources ready to go when these things start happening, or we will create another epidemic\ldots{} We have to look out for us. We have to keep us safe at the end of the day\ldots{} We understand that these people are not looking to comfort us, that they don't care if we live or we die.'' Myah thinks it's time for the queer community to take these threats seriously, and for trans people to have each other's backs.
+
+She says that we should be putting our money more towards this sort of preparedness, and less towards some of our other events. ``If we took some of that money, the thousands of dollars we pour towards Pride every year, if we could take some of that and put it towards those resources\ldots{} these queer people are going to need these resources.''
+
+I think she's completely right. But, I also think that Mobile is more uniquely primed to do this kind of work than many might imagine. Mobile has never been a place where the gays only come out in June. From way back when all the way up to today, we have always had a variety of year round events. Our local organizations work tirelessly to host Pride Family Picnics, balls, galas, bar crawls, memorial services, history events, potlucks, home repair work days, HIV testing clinics, food distribution events, clothing exchanges, housing programs, and a thousand other things. Even during the AIDS epidemic, members of the local queer community did exactly what she is suggesting; they organized amongst themselves to import, collect, and distribute medications from an underground pharmacy on Westwood Street, in midtown. In Mobile, we don't only do parties, or protests; we do Mutual Aid. We take care of us. We need to get better at it, learn more, put more of our resources towards it. But I think we are on the right path.
+
+The core truth of queerness in Mobile is this; there isn't just one queer community, or one organization. There isn't one way to do Pride or be gay. There is not just one history.
+
+We often like to imagine that history is the result of a few important people stringing together feats by their presence in events. We like to imagine that queer communities are small, and insular, with a few clear leaders starting everything. But, in reality, there were and are lots of queer communities, and lots of people making important and big moves. They overlap and intertwine; they are deeply interconnected, but it's not as linear of a story as we often believe.
+
+Sometimes, movements are talked about like a tree, with one trunk growing up that everything else stems from, branching off, and bearing fruit.
+
+But the queer history of Mobile isn't like that. It's more like a pine savanna.
+
+We do have some tall trees, yes, with broken off lower branches, high canopies up in the air like pillars holding the sky. Aids Alabama South and its predecessor organizations are like that, and so are groups like Osiris, Mobpride, the UUFM, and Cornerstone MCC. They have been our towers, our refuges, our long lasting, growing things that you can see from a distance. Prism United is quickly becoming one like these - sending its roots backward for nutrients and love with its Come Out Mobile gala, and forward towards the light with its youth support services.
+
+But like a pine savanna, what is key to the thriving of our queer ecosystem is that these big, towering, monumental organizations still let light in, down to the ground floor. They don't overcrowd each other, and no single one of them tries to be on top. And so, we end up with grassroots, and many little flowering things growing below. It is in those spaces that the most diversity of life and care and queerness lives.
+
+Groups like Gulf Alliance for Equality and Bay Area Inclusion are dead, perhaps, but they still tower around us. They are like the standing deadwood so important to the pine savanna ecosystem - we nest in them. The connections that they made still thrive. The place that they nurtured is still nourished by them.
+
+Talk to your queer elders. Listen to what they have to say. Don't assume that this place has nothing to offer, and that being gay is always better in some other city on some other coast. Live here, in the place you are in. Fight for it. Continue the work of building it into something beautiful and thriving for our people.
+
+This is the queer ecology of Mobile, Alabama. I am glad to be a part of it, growing alongside all of you. Thank you. I love you.
+
+\section*{The Most Pressing Issue of Our Time}\label{the-most-pressing-issue-of-our-time}
+\addcontentsline{toc}{section}{The Most Pressing Issue of Our Time}
+
+\emph{by Viktor Zaltys}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Alabama State Representative David Standridge has pre-filed a proposed bill for the 2026 legislative session, unphased by its failure to pass in the 2025 session. 2026 Legislative Session HB2 would require all State and Municipal documentation to refer to the large body of water just south of us - the internationally-recognized Gulf of Mexico - as the ``Gulf of America.'' The most pressing issue of our time.
+
+That is, of course, the current most pressing issue. Let us review all of the crises that were addressed in the 2025 State Legislative Session.
+
+SB 171 - this Bill makes it a misdemeanor to drive motorized vehicles under water. ``For purposes of this section, the term `motor vehicle' means any vehicle that is self-propelled or that is drawn by a self-propelled vehicle, including an off-road vehicle, all-terrain vehicle, motorcycle, motor scooter, and motorized trail bike. The term does not include a vessel or other watercraft designed for transportation on water'' (SB 171 lines 10-16). It was such an important bill that it passed completely on its own merits. Not a single additional part of this forty-two line bill covered anything else besides the alarming number of people driving underwater. Surely I-65 has been replaced by the Alabama River for the amount of traffic jams it must be experiencing. I know for me personally, when I kayak in the Delta I'm constantly running aground on all these underwater cars.
+
+Although, as a hardliner against underwater motor scooter driving, I was sad to see that it was a compromise bill. After all, ``The operation of a motor vehicle on lands submerged below navigable or non-navigable waters while remaining on land that the operator of the motor vehicle owns or has permission to be upon'' (SB 171 lines 31-34). As a hardliner, this is a disappointing compromise. I'm just glad that come October 1, traditional water vessels shall finally take back control of the public waterways. Truly one of the most pressing issues of our time.
+
+Then of course, there is HB 463. While not a Chilton County resident, my heart bleeds for its people and I am overjoyed to know that the Alabama State Legislature voted to allow ``for the Director of Chilton County 911 to make purchases using a credit card or debit card issued to Chilton County 911 under certain conditions'' (HB 463 lines 5-7). Clearly this was never something that Chilton County could have done on its own. The state being required to enable this minutia is my favorite part about Alabama's democracy- that county commissioners aren't allowed to put up new rules and regulations in local public forums to discuss why they are needed and get local feedback. That would be silly. Instead, Alabama, historically loving centralized power, pioneered a system of government that requires the State Legislature in Montgomery to make a law allowing for a county employee to get a debit card. Truly one of the most pressing issues of our time.
+
+Meanwhile, the grocery tax was lowered from 3\% to 2\%. A regressive grocery tax, which lays the tax burden squarely on the working class, isn't a pressing issue for the Alabama legislature. Fortunately, the government is now only taking 2\% of the money that you use to buy healthy food for your family. Truly not a pressing issue in our time.
+
+\chapter*{June 2025}\label{june-2025}
+\addcontentsline{toc}{chapter}{June 2025}
+
+A calendar of events for this month is included in the original issue, available as a \href{https://mobilebaydsa.org/newsletter/june2025.pdf}{PDF} or via the \href{https://viktorzaltys.substack.com/p/mobile-bay-labor-journal-50c}{Substack}. An official website for the journal is coming soon.
+
+\section*{Why Pride Month? (1)}\label{why-pride-month-1}
+\addcontentsline{toc}{section}{Why Pride Month? (1)}
+
+\emph{by HollyRose Baker}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+June is Pride Month, and it has been since June 28th, 1969 ‑ when a six day uprising against police violence occured. It was centered around The Stonewall Inn, a gay bar in Greenwich Village, New York City.
+
+The Stonewall Rebellion was not the beginning of organized queer movements in the United States. There had long been an ember glowing beneath the surface, held alive by our love, by our communities. But Stonewall was like diesel poured on a bonfire. Queer people had been getting arrested, having their spaces raided, and been beaten by the police for a long, long time. Stonewall wasn't the first time we fought back, but it was the largest.
+
+Police charged through the door, as they did several times a week. They took the money out of the till, and then out of the secret, second till hidden in the ground, and they pocketed it. They started grabbing folks, handcuffing them, pulling them out. The offenses were unoffensive ‑ being gay in public, wearing women's clothes ‑ but it didn't matter. The law was against them, and police wanted any reason they could get.
+
+Fifty years have been spent arguing over the inciting incident. Why, on tonight of all nights, did we begin to fight back? The next moments are a blur, and most likely, a thousand things happened, creating a perfect storm of righteous indignation that refused to be ground down yet again.
+
+Soon, there was a chorus line out front, forming a human wall against the police. They sang showtunes and laughed as the cops charged them ‑ physically with brutality, and legally, with citations. Twenty‑one incarcerated Black Panthers shouted their support from across the street, high up and behind the bars of the Women's House of Detention. Someone climbed a street pole in heels, they say, and dropped bricks on the police cruisers. People just kept coming. Trans folks and drag queens, butch dykes and gay men, Black femmes and Puerto Rican street kids, even a straight folk musician. Folks just kept coming to join in. For six days they crowded the streets and sung the hymns of gay liberation.
+
+And we never stopped. The next year, on the anniversary, admirers and participants of the rebellion decided to commemorate it. They held the Christopher Street Liberation Day Parade.
+
+Over the next half decade, a global confluence began. These commemorations became known as Pride. From Sao Paulo, to Sydney, to now, where there are thousands of Pride events happening around the world. They have always been a mix of a protest, and a party. They have always been a celebration of everything straight society hates about us - kink, drag, and our loving existence.
+
+But they were, also, pushes for visibility and acceptance.
+
+Sometimes, in that pushing, some of our own got pushed out.
+
+At the fourth anniversary of Stonewall, there was a massive gathering. The Gay and Lesbian organizations showed out in their nice clothes, many of them trying to look nice to polite society. They said they didn't want any ``scare drag'' or ``freaks'' there making them look bad. Trans people and queens were kept away. Sylvia Rivera, who had been involved in the Stonewall Rebellion, had just been released from jail for the half hundredth time. She was constantly arrested for wearing women's clothes and street sleeping. She was arrested for prostitution, even though there were no jobs trans folks could have, and even though many of the arresting officers utilized her services. She asked to speak before the crowd of gathered gays, but she was denied. She was seen as too embarrassing - a bad look to the groveling acceptablity so clung for by the richer, whiter, less radical members of the queer movement at the time.
+
+She had to claw her way back onto the stage. In an impassioned speech, she reminded those who were there celebrating, begging for acceptance, they they had left behind their queer kin. They had abandoned those stuck in prison. They had abandoned the street kids. Herself and Marsha P. Johnson had founded S.T.A.R. - Street Transvestite Action Revolutionaries - an organization that focused on housing homeless trans children, and also on revolutionary politics. Rather than support this work, those who were closest to social acceptance were willing to sacrifice these women and children on the altar of reconciliation and respectability politics.
+
+This is a dynamic we have seen play out time and time again. A movement is worked the hardest by those in the most marginalized, most outsider positions. Once it takes off, those same people are treated as acceptable collateral damage of the movement itself. We see this now, as transgender people are blamed for the loss of the Harris campaign, and party Democrats tell us that their strategy will be to move further and further to the right next election.
+
+This Pride Month, I ask you this. Don't compromise before you begin. Do not give up your allies to gain favor with enemy forces. Turn to the trans people, turn to the migrants. Link arms with them. Even as you hear shouts from afar that say we must be abandoned, I beg you this - pick your feet up. Lock arms. Kick. Form a chorus line as the police close in. Sing songs of our shared liberation.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+There are several Pride events this month, and you can find them on our calendar on Page 3. Mobile is a place full of queer organizers, organizations, allies, and community members. Next month we will talk more about the history and the current state of Pride in Mobile. The highlight of June is Pride Artwalk, but June is by no means the end of local pride celebrations. Rainbow Pride of Mobile will host their pride fest and pride picnic in October, and Color Fairhope With Pride will host their bayside event then as well, on National Coming Out Day. Prism United will host the Wig Walk in late summer or early fall. Trans Day of Rememberance will have a vigil, planned and hosted by Trans Pride of Mobile. As of the day of this publication, there is one more showing of Bent Broadway tonight. There will be plenty of other events throughout the year; you can submit them and view them at \url{https://mobile-gaydar.org/}.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section*{Raphael Semmes: Portrait of a Cockroach}\label{raphael-semmes-portrait-of-a-cockroach}
+\addcontentsline{toc}{section}{Raphael Semmes: Portrait of a Cockroach}
+
+\emph{by Gracchus}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Rear Admiral Raphael Semmes CSN was born in Maryland on September 27th, 1809. He joined the United States Navy in 1826 as a midshipman, was promoted to captain in 1855, and assigned lighthouse duties thereafter. He then committed treason in 1861 and defected to the Confederate States of America, beginning a storied career killing men he once considered brethren. Today he is recognized as one of the most successful navalraiders in history, capturing or destroying over sixty-five vessels in his career. Finally, in 1877 a contaminated shrimp did what so many brave union men could not and took Admiral Semmes, long past his due.
+
+Semmes was never convicted of treason, or murder. Instead, once his civil rights were restored in 1869 he began practicing law in Mobile published his memoir, Service Afloat and Ashore during the War Between the States. His memoir is considered one of the most coherent and well developed arguments in favor of the Lost Cause myth. In it he extols the virtues of the brave, sophisticated, gentle-natured southern traitors who fought to keep other human beings in legal and literal chains. He even goes so far as to state that the Civil War was primarily about slavery and to defend the peculiar (EDIT?) institution as benevolent and mutually beneficial.
+
+In an act of abject adoration, the citizens of Mobile awarded him a two-story townhouse at 804 Government St., now recognized as a historical marker. In 1900, a full twenty-three years after his death, the agitators. In the wake of the George Floyd protests, the statue was duly defaced as all symbols of tyranny should be. In a controversial move, Mayor Sandy Stimpson announced that the statue was being removed. The Admiral Semmes Camp 11 Sons of Confederate Veterans erected a monument to the former monument in a plot of Midtown's Magnolia Cemetery close to the S Ann St.~entrance. Also located here is the Confederate rest, a Confederate monument dedicated by Semmes himself that was shattered by a bolt of lightning in 1931, as Robespierre smiled from above.
+
+After a stint in storage, the statue found a new, more appropriate home in the History Museum of Mobile, without the pedestal. The twenty-eight ton granite monolith was to remain in purgatory until May 2025, when the Admiral Semmes Camp 11 Sons of Confederate Veterans re-erected the pedestal in Baldwin County. It now stands in Spanish Fort at the Fort McDonald Confederate Memorial Park (Blakely) awaiting a newly commissioned statue which will be placed there before summer is out.
+
+Why do people continue to insist on memorializing traitorous slave-owning vermin like Semmes? Some Confederate officers had the decency to die before the war ended or repent during Reconstruction. Semmes and his ilk continued to stain America's cultural fabric with Lost Cause mythology, pseudo-scientific justification of racism, and abject perversions of gospel. Their insistence on the perpetual bondage of other human beings tore a rift in our nation that they have never allowed to heal. Instead it festered and became infected, gangrenous. The civil rights movement of the mid-twentieth century did much to clean and heal the wound, but still it has not fully closed. Nor will it ever as long as neo-Confederate reactionary elements continue to idolize the human cockroaches who escaped the sword of justice in 1865.
+
+Perhaps a better question would be, why do we, as free citizens of a free republic, tolerate these monuments to tyranny?
+
+Raphael Semmes is buried in the Mobile Catholic Cemetary, section A, lot 12 should any readers in the area require a public urinal.
+
+\section*{Mutual Aid and the Path Forward}\label{mutual-aid-and-the-path-forward}
+\addcontentsline{toc}{section}{Mutual Aid and the Path Forward}
+
+\emph{by HollyRose Baker}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+We look around as the world gets worse, and harder to live in, and we wonder, ``How will any of us survive this?'' We have tried heedlessly to petition those in power. Calls to senators win us nothing but silence. Protests in the streets beg for them to hear us, but are lost to the noise of the world. We find no allies on any ballot, only lesser and greater evils with no interests aligned with ours.
+
+And yet, as I look out, I also see much beauty. The plants and trees and flowers call to me, offering food and com- fort. Friends line up to ask me if I need anything, and to see how they can help. I watch as they work lovingly to take care of one another, or a stranger. I see them learning bike repair, HVAC maintenance, and basic construction. They do what they can to save each other fifty bucks here or there, and make life ever cheaper, ever easier, ever more joyful and connected. I watch as the people around me organize to collect free food left over from church potlucks and pride events, catered weddings and successful fishing trips. They take it around to whoever needs it, and sometimes just whoever wants it. It's nice to have prepared meals in the house when you first come home with a newborn, and even if you could afford to buy it, the fact that your community came and delivered it often means so much more than any DoorDash order ever could.
+
+To me, here, in these soft moments, I see a path to survival. And, perhaps, something far beyond it.
+
+It is not hard to imagine these systems expanding. You just have to give your self the luxury of imagining, of really resting in the day dream that a better world is possible, and that we can build it with our own hands.
+
+I see a future where we collect hickory nuts in the fall, and we use mortar and pestles the size of a child to grind them. I can see us making nut milk, and distributing it as a universal basic good to our local community. I can see a future where persimmon fruit roll-ups are drying on racks in every kitchen, or in community workstations, and being taken to schools for lunches. I am tired of asking the government to provide free food programs, and healthcare for all, and environmental protections. Instead, I have begun to ask the land, and the people who are living on it.
+
+I believe it is possible for us to create an infrastructure of community care with what we have now. It will take work, and time, and connections. But I cannot imagine a more enjoyable way to spend my life than this. I want to live in a world where the fruits of our labor are belovedly extended towards community needs - rather than garnished as profits for a few who sit far away and unhappy on their pile of riches.
+
+I think this model is scalable, and I think it applies to practically everything any of us need. We can work in tandem with one another on the many specialties and knowledges required for community care. And, unlike having a grand revolution, or casting a ballot, we do not have to wait to get started. It is a simple formula, and yet, I see it growing everyday around me. It looks something like this:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Do everything we can for the people around us - to meet their needs, to reduce the harms and hardships in their life, and to curate within them and within ourselves a joyful existence.
+\item
+  Do this for as little money as we possibly can.
+\item
+  Expect the same from our community. Ask for what we need. Be open to the possibilities of what is offered. It doesn't need to be tit-for-tat, taking from one person and giving back to them directly in equal measure and value - instead, we do what we can to give what we have to the whole of the community. Give to the whole, and receive from the whole.
+\item
+  Always be striving to operate at a sustainable capacity. Do what we can to maintain, no more, no less.
+\item
+  Use the money we save to reinvest in community projects. That might mean working less so we can can give more time to caring for others. It might mean buying land for foraging, housing, or harvest, or putting money towards the strike fund of a local labor union. It may be as simple as buying a tool that would save labor at the community garden. Our goal, ultimately, is to exist outside of capitalism. We want to provide each other with everything for free, and not rely upon the system. But this is a transition, and in the meantime, we can leverage our position as community caretakers to spend our resources wisely, in mutually beneficial ways.
+\item
+  We must look for help in unlikely places.
+\end{enumerate}
+
+It may seem that the world is ending, and that we are doomed. As fascism rises, some of us will want to vote it away, or legally challenge it. Others will want to fight it with guns and violence. In this way, our people may seem to be divided. But know this: the work to do now is the same work. No matter who is in power - no matter if we believe in reform or revolution - how we take care of one another will always be our pathway to survival. It is this infrastructure which can topple empires. Mutual Aid can be our supply line.
+
+If you want electable candidates who will do the work of caring for the community, than they must come from the community. They must be borne out of the work of Mutual Aid itself. They must be driven to run not by ambition, nor by mere hopelessness of another option, but instead they must rise to political office because they understand directly what it is to try and work outside these systems, with them, and against them to meet the needs of real, human people. For them to ever support our work and our values, they must arise out of the enactment of these values. They must see themselves not as a solution, not as a savior, but as one part of a strategic plan towards the betterment of life for those in our community and our world.
+
+If you want a revolution - if you want to topple the powers of the state, empire, and capitalism - so too must you do the work of love. It is through your love that you will survive, and fight, and know what to build after the dark times. You cannot build a society where everyone is fed if you do not have practice feeding one another. You cannot build a society that is just and kind and fair if you do not have practice with the real, messy, and complicated process of harm mediation, and restoration. And, most of all, you cannot overthrow anything without the help of your neighbors. You need their trust, their love, their homes, their gardens, their commitment that a better world is possible, and worth being imagined.
+
+This is our plan, the unified vision of the popular front, and the road to many possible futures. We must each of us give what we have to give; our ability, our resources, our time, our effort, our love - and we must each of us build our lives in such a way that we may take that which is given and use it to form the basis of our most basic needs: and even beyond, to our most cherished, beloved, joyful needs.
+
+It is not enough to be \emph{against} - against capitalism, against fascism, against colonial supremacy. Ultimately, it is what we are \emph{for} that will make the difference. We have to build something different. We have to build it on the basis of our own actions; right here, right with the people around us, in the conditions we have to work with.
+
+The old couple down the street would love for you to help in their garden. You don't need to wait for a distant dream where you can live on a commune with your friends. That local event would love for you to take their leftovers and distribute them to homeless folks. You don't have to wait for the mythical day where those in power decide to set up universal free food services.
+
+We must start now. We must live now.
+
+Hold what you have in common. Get up a little gumption, talk to folks you see. Go places regularly and ask, offer, and do.
+
+We need not beg and pray that things will go back to normal. Normal was never acceptable. Our needs were not met.
+
+No, we must come through this stronger than before.
+
+\section*{50 Years Later, What Lessons from N.O.W.?}\label{years-later-what-lessons-from-n.o.w.}
+\addcontentsline{toc}{section}{50 Years Later, What Lessons from N.O.W.?}
+
+\emph{by Travis Cummins}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+After Martin Luther King, Jr.~was assissinated on April 3, 1968, cities across the country erupted in riots and angry protests. Here in Mobile, the event marked a turning point for the Black freedom movement as seven thousand people took to the streets in the city's first known civil rights demonstration. They were led by the Neighborhood Organized Workers (NOW), a militant group that was unafraid to defy city officials who had prohibited any marches for the slain leader.
+
+Mobile's older civil rights leaders discouraged public displays of Black resistance in favor of court-based approaches and alliances with white moderates. By the late sixties, these solutions were not working fast enough in the eyes of many young African-Americans. Upset over the complete absence of local Black political representation and widespread poverty in Black neighborhoods, they started holding discussion meetings. Out of one of these meetings NOW was born in December 1966.
+
+``When we organized NOW, we had in mind a militancy that Mobile people haven't ever seen before,'' said David Jacobs, the group's first president. NOW did not immediately begin confronting power, however. Throughout 1967 they organized food drives and neighborhood cleanups, strengthening ties with the community. They also asked people to bring them their concerns. A chief complaint they heard from those living near downtown was that Black workers could not earn enough to survive because white store owners refused to hire them for well-paying positions such as cashier.
+
+Then came the historic march for King, proving that people in Mobile were ready for action. NOW seized on the excitement after the demonstration and directed it towards tearing down the city's racial job barrier in the fall of 1968. They organized massive boycotts and pickets of white-owned downtown stores, drawing on their membership that had by now grown into the hundreds. Dubbed ``Operation Ghost Town,'' the jobs campaign virtually shut down every business in the area for nearly a year. Recognizing that people still needed to eat, NOW held food drives that fed thousands of people during the Christmas season. By October 1969, the boycott forced store owners to hire Black Mobilians in better-paying positions throughout downtown.
+
+Emboldened from their first successful project, the group evolved their tactics in their subsequent effort as they expanded their scope. Moving beyond private businesses, NOW led another campaign against the racist employment practices at the city-owned Municipal Auditorium, known today as the Civic Center. Recognizing that it was necessary to do more than boycott this time around, NOW timed a massive demonstration during a popular televised event at the auditorium. Buckling under the pressure of bad publicity and low ticket sales, the city promoted the auditorium's first Black manager in late 1969.
+
+After their victories securing better jobs for Black Mobilians, NOW tried to win Black political representation in city government. For years, moderate Black leaders told African-American voters to elect sympathetic whites rather than run for office themselves, despite the lack of progress on Black issues. Using its widespread influence, NOW led a boycott of the 1969 city elections to protest the lack of Black candidates, costing a popular white liberal his seat.
+
+Before NOW could launch a campaign to fill the political void, the Mobile PD arrested Beasley and other group leaders on trumped-up murder charges in 1970. The cases were dismissed, but the arrests and subsequent FBI repression sent many NOW members into hiding. Beasley was convicted of drug trafficking in 1973. While the group continued for two more years, membership continued to decline and NOW formally disbanded in 1975.
+
+It's a familiar story - the police are used to suppress the struggle for Black liberation through arrest, capture, or even assassination. In the South, the police started as slave catchers. Today, with slavery still legal as punishment for a crime, cops capture or kill movement leaders. The history of NOW is the history of now, and the history of black resistance. From Nat Turner to the Black Panthers; from Noble Beasley to the 2020 Uprising.
+
+As the struggle continues, there are lessons to be learned from NOW's story. The group continuously expanded the scope of their reach after starting small with simple community cleanups. They also listened to the people of Mobile, soliciting their complaints and focusing on the issues residents cared about. By maintaining a dialogue with the community, NOW knew when it was time to take a larger risk such as calling for an ``illegal'' march. As a result, the group changed people's ideas about what was possible and brought the local economy to its knees in the fight for better jobs.
+
+In recent months, hundreds have taken to our city's streets in protest of Trump and the inaction of Democratic leaders. Will this turn into a sustained movement that can effect change as NOW members did? Engaging with their experience and other groups of the past must be part of our search for strategies for today as we take up the same fight NOW did, one that aims to win a city and a nation free of oppression.
+
+\section*{One Bus Forward, Two Rides Back}\label{one-bus-forward-two-rides-back}
+\addcontentsline{toc}{section}{One Bus Forward, Two Rides Back}
+
+\emph{by Viktor Zaltys}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+One thing every Mobilian can agree on is that the Wave Transit system is not a practical choice for most residents. The one hour routes lead to commuters having to plan ahead to ride the city's public busline. This isn't a transportation system with riders in mind. Currently riders have to walk up to a mile on roads without sidewalks to a bus stop without a bench or raincover, all for a bus that comes at the top of the hour. So when Councilman Josh Woods told NBC 15 that if he were to use the bus to get to the council meetings it would take him a total of four hours of commuting, it was a regrettably familiar story.
+
+So how can the glories of public transportation be expanded in Mobile to create an environment where it's actually reasonable to use it? If you ask Mobile Finance Executive Director Scott Collins, the answer is obvious - decrease wait times to 30 minutes. This would allow for someone who is 5 minutes late for the bus to wait 25 minutes instead of 55 minutes for the next one. People from all over the city could reach work, the store, or downtown easily.
+
+Wait.. he is also proposing for the fixed routes to be dropped from twelve to three. So, this will only benefit some Mobilians, not all\ldots{}
+
+Well, Mr.~Collins also wants to expand the ride share MoGo to pick up the slack and decrease wait times. I see! So we can have more cars on the road! That is my favorite secret part of public transit - increasing the vehicles on the road so that it's harder to move around in car-first infrastructure, all the while expanding the fleet of vehicles that the city will have to pay to maintain in the future.
+
+Don't get me wrong, MoGo is a great auxiliary for Mobile's lacking public transit. However, its successes shouldn't be used to justify the defunding of our bus system. If Mobile has any ambitions of growing as a city, it will have to eventually let go of its suburban love of cars and star investing in mass transit. Otherwise Mobile will continue to see wealth flight and fewer and fewer people living in the city. There will be no meaningful difference between driving from Daphne for a night out on the town and navigating midtown traffic on Dauphin. There is a reason any successful city has a bus system - it is a foundational artery to city growth that can't be replaced by supplementary infusions in the form of ride share.
+
+Mobile doesn't need to cut the budget for Wave Transit from twelve million to ten. It needs to intentionally invest in public transit so that bus travel in the city can become practical and preferable for Mobile residents. In time, we can come to see Mobile become a walkable and cultural city model for the Southeast - if we choose to invest in that future.
+
+\chapter*{May 2025}\label{may-2025}
+\addcontentsline{toc}{chapter}{May 2025}
+
+\section*{Growing Tide in the Bay Area}\label{growing-tide-in-the-bay-area}
+\addcontentsline{toc}{section}{Growing Tide in the Bay Area}
+
+The original issue is available as a \href{https://mobilebaydsa.org/newsletter/may2025.pdf}{PDF} or via the \href{https://viktorzaltys.substack.com/p/mobile-bay-labor-journal}{Substack}. An official website for the journal is coming soon.
+
+\emph{by Viktor Zaltys and Alex Ames}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+On April 19 the Bay Area broke its record for the largest protest in Mobile history since the 1960s civil rights movement. The previous record, set just two weeks ago by the Hands Off protest, saw 400-500 demonstrators march through downtown Mobile, according to organizers. The No Kings protest saw at least a 40\% increase in participation, with nearly 700 protestors showing up to Mardi Gras Park.
+
+``When it comes to any movement it tends to start off really strong in the beginning and then diminish in numbers, so honestly seeing a big return brings my spirit back to life,'' said one of the organizers.
+
+This group has seemingly found a way to get the local population involved. While the first protest brought only 100-200 people to Government Plaza, demonstrations now run as a well oiled machine with official crowd counters, local news reporting, and volunteers passing out water bottles and snacks as well as documenting the protest for the public record by surveying nearly 80 protestors.
+
+Interesting trends emerged once the data was laid out on the spreadsheets. The first thing that stood out was that while almost everyone had voted in the past election, 57\% (45 out of 79) of those interviewed stated that they hadn't participated in past political action. This is also reflected with the organizers of the protest the four organizers interviewed only started to seek ways to get more politically involved after the 2024 election. The protest was held entirely by first-time organizers and achieved a high turnout of first-time protestors, which further exposes the discontent many Mobilians feel after all, 87\%, (69 out of 79) of the protestors interviewed said that they are seeking more ways to get invovled and look forward to future protests.
+
+This appetite for activism is something the organizers are seeking to develop. Throughout the speeches, speakers addressed how they are not just there to fight fascism, but to help protestors find organizations through which they can continue to act.
+
+``The most important thing is building a community and giving people a place where they feel comfortable,'' said one of the organizers. ``In this day and age, it's really hard to find somewhere where you belong and to find people who are going to band with you.''
+
+This approach helps address one of the biggest problems political movements can run into: despair from feeling unheard that ultimately leads to political apathy. While the most common answers to questions about the biggest concerns that the protestors had were fears over checks and balances, immigrants' right to due process, and America's growing descent into fascism, the speakers attempted to draw attention to how the participants can act locally to affect change.
+
+These included Jeff and Elijah, who represented Mobile DSA and PSL respectively. The two speakers addressed how the erosion of working class representation and rights led the U.S. to elect Trump.
+
+``The theater of politicking isn't for the proletariat,'' said Jeff, pointing out how Martin Luther King Jr.'s assassination was a direct reult of his campaign for workers' rights, ``I say that's something we can change.''
+
+Elijah gave an extensive laundry list of services to student communities that would be removed with the Trump administration's dissolution of the Department of Education, from providing food and ESL assistance for international students to transportation for legal hearings. They offered scathing criticism of the United States' support of genocide in Gaza and taking of political prisoners Mahmoud Khalil and Rumeysa Ozturk before calling out to the working class: ``Workers make the world run, therefore workers should run the world.''
+
+The most powerful speech on the topic of Palestine was given by Ahmed, the representative for Mobile for Palestine, who connected the lack of essentials for working class Americans to the billions of dollars the U.S. government supplies to fund the genocide in Gaza - we have much more in common with the suffering Palestinians than the billionaires of the United States.
+
+If these new faces to Mobile organizing are successful, the energy of that vast majority of protestors who are interested in doing more can be channeled through groups like Mobile Bay DSA, PSL, or Blue Wave. Mobile could find itself heading towards a historic political shift, possibly laying the groundwork necesary to turn Alabama as a whole blue.
+
+\section*{The Origins of May Day}\label{the-origins-of-may-day}
+\addcontentsline{toc}{section}{The Origins of May Day}
+
+\emph{by Alex Ames}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+You're probably familiar with Labor Day as a U.S. federal holiday in September where some people get a day off of work - unless, of course, you don't work for the federal government - there's no actual legal requirement for employers to give anyone a day off. Instead, a celebration of workers' rights has been eagerly co-opted into Labor Day sales and three day weekend deals. After all, our labor creates all wealth, so enjoy 10\% off the goods that you helped make. And yet, Labor Day wasn't always capitalist, nor was it was it always in September.
+
+In the 1880s, labor movements in the U.S. became increasingly powerful and well organized, pushing for rights such as higher wages, improved working conditions, and limited hours. Then, on May 1, 1886 a nationwide strike for an 8-hour work day began, organized by the American Federation of Labor (still in operation today as the AFL-CIO). Three days later, on May 4th, violence broke out in Chicago when an unknown individual threw a bomb into the crowd, killing at least 11 people and wounding dozens more. This incident, known as the Haymarket Affair, became a symbol of the international struggle for workers' rights.
+
+Following the Haymarket Affair, in 1889 the International Socialist Congress designated May 1st as International Workers Day to commemorate the incident and the lasting effect it had on the labor movement in the U.S. and worldwide.
+
+At the same time, a push for a similar holiday in the U.S. was rapidly gaining popularity in the midst of budding anti-communist and red scare sentiment. In an effort to distance himself from the socialist roots of May 1st while still appeasing popular demand, President Grover Cleaveland chose the first Monday of September as the date for the new U.S. holiday.
+
+Optics? Maybe. Effective? Maybe not. But make no mistake - September was chosen as opposed to the original holiday of May Day in an effort to disconnect the meaning of a day meant to appreciate workers with the actual movement that pushed for workers' rights in the first place - labor unions, socialists, communists, and anarchists.
+
+Today, we ask people to instead recognize the history May Day, specifically May 1st, has with labor movements, and what these vital movements for workers' rights mean to workers both around the world and right here in Alabama.
+
+For example, one of the first instances of organized work stoppage in Alabama occurred at the Port of Mobile in 1867, where black dock workers and mill workers at Jewett's Mill organized a general strike for higher wages. Then, in 1934, more than a thousand longshoremen staged a walkout that culminated in a month-long strike against Mobile's large shipping interests.
+
+On this May Day, I hope we keep a generous and courageous view of our own labor. I hope we can regard and celebrate this day without separating it from the movements and struggles of people who earnestly cared about their own work enough to fight for their liberation and the liberation of other people.
+
+\section*{The Second Front: Social Media and the Resurgent Right}\label{the-second-front-social-media-and-the-resurgent-right}
+\addcontentsline{toc}{section}{The Second Front: Social Media and the Resurgent Right}
+
+\emph{by Gracchus}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Leading up to the 2024 election, one of the most frequently talked about polling statistics was the tidal wave of support for the Republican ticket from young white and latino men. While vocal misogyny was to be expected with a woman as the presidential candidate, as was with Clinton in 2016, the numerous victories of the Republicans in the 2024 election still surprised many. This support was contextualized by the aftermath of the election, with a majority of working class voters also favoring the Republican party (Financial Times; Circle).
+
+A nationwide 2024 Gallup poll found immigration to be the top issue among all voters, while a 2024 Circle poll found economic issues to be the top concern among young voters, specifically. These were two of the three main talking points of Donald Trump's campaign rhetoric. His hardline stance on perceived illegal immigration and promises of tariff fueled economic warfare seemed to resonate with these to groups until recently.
+
+New polling data published by the Pew Research Center would have readers believe that young, working class men who voted Republican now regret their decision, as Trump's approval rating falls to 41\% and congressional approval falls to a meager 12\%. However, buried in the data is a far more interesting statistic. Disapproval of the current Republican led government is split largely by party affiliation. A majority of Republicans and Republican leaning people polled still hold that Trump can adequately run the government, especially on immgration (Pew). What is the continued appeal of MAGA conservatism to young men? Why has the Democratic left fallen flat with the working class?
+
+Part of the answer can be observed in our own area. In 2024, Donald Trump carried Alabama with 64\% of the popular vote. Statewide he carried 56\% of the youth vote. He won Mobile county with 57\% of the vote and Baldwin county with 78\% of the vote, according to Politico. The solid south rings especially true here.
+
+Are his economic and immigration policies benefiting his support base? Not in any substantive way. The population of Mobile and Baldwin have a rate of citizenship of 98\% and 97\% respectively (Data USA). Baldwin, being one of the fastest growing counties in Alabama, is reliant on the construction industry, particularly D.R. Horton. The construction industry is, in turn, reliant on immigrant labor via subcontractors. Mobile is reliant on its port, which supports over 350,000 jobs and brings in \$98.3 billion statewide, per Governor Ivey herself. Despite this, available data suggests that Trump's tariff war has reduced the amount of shipping received by Alabama's only major port (NBC).
+
+So what is the appeal? The appeal of MAGA conservatism to young working class men today is the same appeal found in segregation- ist politics by young white men in the 19th and 20th centuries. The segregationist antics and rhetoric of George Wallace did more to entertain than benefit the white working class at the time. So also does the misogynistic and/or racist rhetoric and antics of Andrew Tate, Steven Crowder, Dennis Prager, Jordan Peterson, Marjorie Taylor Greene and Donald Trump entertain and energize young working class men today. They do not need economic security because they are safe from illegal immigrants, crazed feminists, and drag clad ``groomers''.
+
+An entire generation of neoliberal economic policies has put genuine strain on the working classes, but instead of pursuing substantive policy the Republican party has chosen to puruse the pageantry of culture war. The recent rounds of ICE raids are not effective because they're actively bettering peoples' lives. Rather, they are effective only as a spectacle, something to be gawked at at home and touted about when faced with criticism. The so-called ``Liberation Day'' was a simple publicity stunt. No thought was given to the broader implications of starting a trade war with our largest economic partner on the global stage, only that it would play well with his base. As evidence of this simply refer back to the discord sewn within the current administration by the tariff announcements. Combined with the constant babbling about ``woke ideology'' and dismantling DEI (rebranded from critical race theory), this culture war only serves to obscure the hidden Republican agenda of creating an illiberal democracy in the style of Orban's Hungry or Bukele's El Salvador (the resemblance of Bukele and Trump is truly astounding).
+
+So then, what is the appeal of culture war to young working class men? The answer comes in two parts.
+
+First, as stated before, part of the appeal is in superiority and safety. Segregationist politics distracted the white working classes of the Jim Crow era by giving them some- one to look down on, instead of looking up to face their shared oppressors. Today, it is not segregation but instead nativist, misogynistic, and anti-democratic rhetoric that gives working class men a new distraction. The hoarding of wealth by a small clique of self-interested business executives is not the cause of your financial and social insecurities. It is the immigrants that take your jobs, the feminists that ruin your relationships, the LGBTQ+ community that indoctrinates your children, and the liberal Democrats who hijack that government to make it all possible.
+
+Secondly, part of the appeal lies in the new age of social media. Culture war makes good sound bites, entertaining clips, catchy phrases, and algorithm friendly content, not substantive policy initiatives. The MAGA media machine has used social media more effectively than any other political group of the 21st century. There is a parallel media landscape built and occupied entirely by far right publications. Turning Point USA, Breitbart, Twitter (via Elon Musk), Peterson Academy, The Epoch Times (the media organ of the Falon Gong cult), PragerU, and The Daily Wire are all well funded, well produced, and collaborative media efforts that have been effectively mobilized by MAGA conservatives in order to brand their movement as ``cool'' and with the times. Many Republicans even call themselves the new punks.
+
+Where is the equivalent leftist content? Lost in the void of abstract thought. Where are the young firebrands and polemicists that will herald a resurgent left? Relegated to the dustbin of the modern imagination. Where is our Freeborn John? Among the ranks of lumpenproletariat Jacobin contributors and coffee house radicals. Granted, there are a few big names in leftist media, Hasan Piker (HasanAbi, et. al.), JT Chapman (First Thought, Second Thought \& The Deprogram), Ben Thomas (Sisyphus55), the Meiselas brothers (MeidasTouch) et. al., but they are largely centered around individual personalities and rarely network in the same fashion as, for instance, the ``Daily Wire - PragerU - Peterson Academy'' connection.
+
+In order to succeed we must make comparative and collaborative content networks, we must recast the leftist media sphere, and we must learn to propogandize. Yes, we must rehabilitate that dirtiest of words, propoganda, to effectively combat the resurgent right. In a political landscape dominated by performative politics, snake oil salesmen, and Christian fascists I see few other viable options.
+
+\section*{The Aesthetics of Progress}\label{the-aesthetics-of-progress}
+\addcontentsline{toc}{section}{The Aesthetics of Progress}
+
+\emph{by Viktor Zaltys}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+The City of Mobile's Town Hall on Gun Violence, held on April 12, 2025, began with the panel defining gun violence as a public health issue rather than solely a law enforcement or healthcare concern.
+
+``Gun violence in Mobile is a public health issue, not just a matter for police or hospitals,'' stated Mobile Chief of Police William Jackson - a sentiment echoed throughout the evening by other panelists.
+
+The speakers provided a wealth of information, blending data with empathetic rhetoric. Dr.~Ashley Hogue, director of USA Health's Center for Healthy Communities and co-founder of Project INSPIRE, highlighted Mobile's elevated rates of penetrating trauma: 23\% of trauma center patients fall into this category, compared to the national average of 10\%. City Councilman C.J. Small addressed housing insecurity, noting that roughly 3,000 students in the municipality are affected.
+
+After outlining the problems, the panel turned to potential solutions. Currently, Mobile employs 13 school resource officers (SROs) and one cybersecurity officer to monitor students for warning signs of potential violence. These officers focus on intervention and counseling rather than arrests. They are supported by a `Digital Center' that tracks students' social media activity, with detectives following up on concerning posts. Additionally, the police department hosts half-day school events to educate students about safety and build trust with law enforcement.
+
+Dr.~Michaels, Mobile County's Health Officer, discussed broader public health efforts, including kiosks placed around the county offering free gun locks and naltrexone (for opiod overdoses). He also mentioned a state-led initiative to develop a mental health app for Alabama residents.
+
+However, attendees were dissatisfied with these measures. Many questioned why the proposed solutions prioritized enforcement over community-building, given the panel's insistence that gun violence is a public health issue.
+
+The panel defended their approach, citing budget constraints. They noted that city council members even use personal funds to support programs like the Boys and Girls Club. Attendees countered by quoting Chief Jackson's earlier claim: ``The city council has given the department unlimited funds to solve this issue.'' Jackson then clarified, ``Well, it's not unlimited - we just know the limit we can ask for.''
+
+Critics also referenced Jackson's praise for the police cadet program, which he credited with putting him on the right path in high school, arguing that similar community-focused investments were lacking in the current plan.
+
+Ultimately, while the panel's rhetoric aligned with a progressive, public health-oriented perspective, their proposed solutions leaned heavily on traditional policing. Their strategy - training officers to adopt a counseling mindset - seemed at odds with their own framing of the issue. For instance, SROs earn a starting salary of \$56,000 whereas hiring social workers (who are better suited for counseling) would cost less at \$54,000 - a puzzling choice if budget constraints are truly the barrier to more community centered solutions.
+
+\section*{What is Power for Alabama Democrats}\label{what-is-power-for-alabama-democrats}
+\addcontentsline{toc}{section}{What is Power for Alabama Democrats}
+
+\emph{by Viktor Zaltys}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+What is power? In a deep red state like Alabama, the Democratic Party having any power seems like a joke if you aren't in the Black Belt or Birmingham. That is, if you define power as the ability of a group to execute their will. Yet guests of the Alabama Democratic Executive Committee could plainly see a different manifestation of power from the cold, calculated power one thinks of with bureaucracy. Instead, this is a power born from chaos.
+
+The Montgomery auditorium rumbled louder than the halls of Westminster in 2016, the meeting was run by Robert's Rules of order in name only. The lack of decorum that Robert's Rules requires was evident throughout the entire process, but the first warning bell rung with a lack of any desire to even start the meeting, which caused it to start 45 minutes late. This is not a death sentence - perhaps the rest of the meeting will run smoothly due to the clear lack of enthusiasm of the 210 committee members to even be there. Instead of following the agenda and rules previously established, however, a dispute formed during the explanation of the rules that wouldn't be resolved until after close to an hour of debate - and even then, they maintained the rules as written.
+
+Nearly two hours have passed since the scheduled start for what was planned to be a two and a half hour meet- ing, and the committee has just made it past the second line of the agenda. Before deciding on any measures to improve the party or its effectiveness, there's still plenty of bureaucratic work to do. For example, filling all the vacant seats of the committee - according to the bylaws, you cannot vote on national committee members if you have vacancies. Except only the chairs knew there were vacancies, and they already took care of nominating their own replacements without informing the rest of the committee. This stunt leads to several uncontested elections of new members and the rising discontent of the committee. One of the most egregious examples was a resignation that only two chair members received notice about - at this point, the committee stated they wouldn't fill that vacancy until the resignation could be confirmed. Although National Representatives would normally not be allowed to be elected due to the representative vacancies, the Chair unexpectedly decides to void the bylaws in order to hold the election anyway.
+
+Nearly three hours after the meeting was supposed to be over, the agenda is due to move onto New Business - enacting the Alabama Democratic Party's strategic plan for the state going forward. However, everyone has left. The committee members left frustrated, hungry, and confused. The chair Randy Kelley, however, got exactly what he wanted. The people he supported and that support him got elected. Chaos in the committee allowed for the consolidation of power while not allowing dissenting voices to challenge the status quo. The only balancing act the chair has to concern himself with is not allowing for progressive voices to consolidate so that the old guard continues its hold of power over the party. The best way to do that? Establish arbitrary rules to suggest a path to reform while maintaining your own power structure.
+
+It doesn't matter if you can't expand your influence to obtain higher offices if you can have absolute power over a thiefdom. That is what the Alabama Democratic old guard cares about - maintaining their piece of the pie instead of trying to work with others to make a bigger cake.
+
+\section*{The Highs and Lows of Mobile, Alabama Animal Welfare}\label{the-highs-and-lows-of-mobile-alabama-animal-welfare}
+\addcontentsline{toc}{section}{The Highs and Lows of Mobile, Alabama Animal Welfare}
+
+\emph{by Carissa Foster}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+The City of Mobile, along with many other cities in the southern U.S., is in the midst of a domestic animal overpopulation crisis. Residents of Midtown and Downtown Mobile encounter stray cats and dogs nearly every day. What is the solution? According to the City Council and many concerned citizens, help lies in the construction of a new City Animal Shelter.
+
+The City's current Animal Shelter, located at 855 Owens Street, was originally built in 1965. After a long sixty years, the shelter is overdue for an upgrade. Luckily, after over three years of rumored plans to build a new facility, real momentum has recently occurred. On Tuesday, April 8th of 2025, the City Council finally approved the purchase of a building they say will be the site of the new Animal Shelter. The recently acquired building, located at 1668 West Interstate 65 Service Road S, cost the city \$855,00. This price does not include the cost of renovations that will need to take place to prepare the currently vacant building to house animals.
+
+Although the acquisition of this new building is a step in the right direction, it is debatable if it is acutually the best move. There has been community pushback on several fronts, including location and whether the new shelter is going to be capable of meeting the high demand of Mobile's stray animal population. In fact, the new building is considerably small than the seven acre lot the City initially planned to use for the new Animal Shelter. The previously proposed lot, located off of Montlimar Drive near Cottage Hill, has been owned by the City since 1974. Although the city recently invested nearly \$2 million to clear the land for use as a site for the new City Animal Shelter, they instead announced a last minute change of shelter location. Since the quoted total cost for the project would have been around \$20,000,000 million (double the City's budgeted amount), they went with the smaller, less ideal location. In the end, time and action will tell if the long awaited City Animal Shelter can provide a suitable solution for our community's stray animal population.
+
+While awaiting the new City Animal Shelter, there are plenty of ways members of the community can contribute to our City's Animal Welfare right now! The most important thing you can do as a pet owner is to Spay or Neuter your pet. There are hundreds of animals looking for homes in just our local Mobile and Baldwin Counties alone as a result of unwanted litters. Spay/Neuter assistance is offered by various different local rescues, vet clinics, and shelters if you cannot afford the full price of a veterinarian.
+
+\begin{itemize}
+\tightlist
+\item
+  Friends of the Mobile Animal Shelter (Mobile City Residents) - www.formaspets.org - Fill out a Request Help Form
+\item
+  Baldwin County Animal Shelter (Baldwin County Residents) - services.baldwincountyal.gov/BCASVPORTAL - info for obtaining a discount voucher
+\item
+  Saraland Animal Shelter (Open to everyone) - Go to Saraland Animal Shelter 104 Station St, Saraland Animal Shelter 104 Station St, Saraland, AL 36571 - A deposit is required to hold an appointment.
+\end{itemize}
+
+If you are interested in adding a pet to your home, consider adopting! There are dogs and cats in every age, shape, size, and color available for adoption from local shelters and rescues!
+
+\bibliography{book.bib,packages.bib}
+
+\end{document}

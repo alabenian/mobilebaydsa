@@ -1,0 +1,12 @@
+title: Mobile Bay DSA Calendar
+
+#DSA: #ff0000
+#public: #5cd8a4ff
+
+section Disclaimer
+    2025: This feature of our website is work in progress. For now, events have to be added manually. Sorry for the inconvenience!
+end
+
+section DSA Events #DSA
+    October 11 2025: [Interest Meeting](https://www.mobilebaydsa.org/events/2025/10/11/interest-meeting) #public
+end

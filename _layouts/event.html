@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!-- (tailwind) general stylesheet -->
+        <link href="../../../../styles/finalstyles.css" rel="stylesheet">
+
+        <link rel="icon" type="image" href="/icons/mobilebay.png">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="bg-[#FFFFFF] text-center text-[#000000]>
+        <br />
+        <nav class="relative w-[50vw] left-[25vw] justify-center text-[#333333] md:text-[#BDB8B8]">
+            <button class="relative w-[66%] m-[10pt] ml-[11.5%] mr-[12.5%] p-[5pt] bg-[#EC1F28] text-[14pt] drop-shadow-lg/25 transition duration-75 hover:drop-shadow-xl/25 hover:mt-[7.5pt] hover:mb-[12.5pt]" onclick="window.location.href='../../../../calendar_source/timeline.html';">
+                <img src="../../../../icons/calendar.svg" class="md:hidden relative h-[14pt] top-[4pt] right-[5pt] float-left md:h-[15pt]">
+                RETURN TO CALENDAR
+            </button>
+        </nav>
+        <br /><hr /><br />
+        <div class="relative w-[80vw] left-[10vw] md:w-[60vw] md:left-[20vw]">
+            {{ content }}
+        </div>
+    </body>
+</html>
