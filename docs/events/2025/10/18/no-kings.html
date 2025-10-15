@@ -25,29 +25,35 @@
         <br><hr>
 <br>
         <div class="relative w-[80vw] left-[10vw] md:w-[60vw] md:left-[20vw]">
-            <p>There is an interest meeting on October 11 from 10:00 AM to 12:00 PM CDT, at the Fairhope Municipal Pier (1 Fairhope Ave, Fairhope 36531). The meeting is public for all interested, including non-DSA members.</p>
+            <p>There will be two “No Kings” protests around the Mobile Bay on October 18: one in Baldwin County, at Highway 98 &amp; Fairhope Avenue from 9:30 AM CT; and one in Mobile County, at Government Plaza from 4:00 PM CT.</p>
 
-<div id="leaflet-map-0322b39be8d68fb50d9a3602b20896d0" class="leaflet-map"></div>
+<div id="leaflet-map-ad703bdf67b989aa48f985898e69b6dc" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
     var esriLeafletCdn = "https://unpkg.com/esri-leaflet/dist/";
 
     // Get tag input arguments & inside block object list
-    var tagInputArg = {"center" : [30.524965, -87.914878],
+    var tagInputArg = {"center" : [30.689472, -88.042803],
                  "zoom" : 10} ;
     var blockLeafletItems = [
-    
-    {id: "077053cd013fa15154651604748de7f9",
+
+    {id: "4aa366b327ead615679e4e9a1cc2de43",
               type: "LeafletMarker",
-              value: { "latitude" : 30.524965,
-                       "longitude" : -87.914878,
-                       "popupContent" : "Fairhope Municipal Pier"} },
+              value: { "latitude" : 30.523655,
+                    "longitude" : -87.886146,
+                    "popupContent" : "Highway 98 & Fairhope Avenue (9:30 AM CT)"} },
+        
+    {id: "1109562892dfd6f623ece2241b74d0f6",
+              type: "LeafletMarker",
+              value: { "latitude" : 30.689472,
+                    "longitude" : -88.042803,
+                    "popupContent" : "Government Plaza (4:00 PM CT)"} },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-0322b39be8d68fb50d9a3602b20896d0";
+    var defaultMapElId = "leaflet-map-ad703bdf67b989aa48f985898e69b6dc";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -180,7 +186,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 0322b39be8d68fb50d9a3602b20896d0 with these args:");
+        console.log("Creating map ad703bdf67b989aa48f985898e69b6dc with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
