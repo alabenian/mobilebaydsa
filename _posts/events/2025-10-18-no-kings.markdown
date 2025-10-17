@@ -2,7 +2,11 @@
 layout: event
 title:  "No Kings"
 date:   2025-10-18
+time: 10/18/2025 9:30 AM / 4:00 PM
+place: "Highway 98 & Fairhope Avenue / Government Plaza"
 categories: events
+eventtype: other future
+description: "There will be two 'No Kings' protests around the Mobile Bay on October 18: one in Baldwin County, at Highway 98 & Fairhope Avenue from 9:30 AM CT; and one in Mobile County, at Government Plaza from 4:00 PM CT."
 ---
 
 There will be two "No Kings" protests around the Mobile Bay on October 18: one in Baldwin County, at Highway 98 & Fairhope Avenue from 9:30 AM CT; and one in Mobile County, at Government Plaza from 4:00 PM CT.

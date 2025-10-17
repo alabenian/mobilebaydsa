@@ -209,17 +209,6 @@
   .visible {
     visibility: visible;
   }
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-  }
   .absolute {
     position: absolute;
   }
@@ -418,14 +407,6 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .size-2 {
-    width: calc(var(--spacing) * 2);
-    height: calc(var(--spacing) * 2);
-  }
-  .size-3 {
-    width: calc(var(--spacing) * 3);
-    height: calc(var(--spacing) * 3);
-  }
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
@@ -518,9 +499,6 @@
   }
   .flex-grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .translate-x-2 {
     --tw-translate-x: calc(var(--spacing) * 2);
@@ -699,6 +677,12 @@
   .bg-\[\#FFFFFF\] {
     background-color: #FFFFFF;
   }
+  .bg-\[rgba\(80\,18\,16\,0\.4\)\] {
+    background-color: rgba(80,18,16,0.4);
+  }
+  .bg-\[rgba\(120\,18\,16\,0\.4\)\] {
+    background-color: rgba(120,18,16,0.4);
+  }
   .bg-blue-300 {
     background-color: var(--color-blue-300);
   }
@@ -783,6 +767,9 @@
   .p-\[5pt\] {
     padding: 5pt;
   }
+  .p-\[10pt\] {
+    padding: 10pt;
+  }
   .p-px {
     padding: 1px;
   }
@@ -831,6 +818,9 @@
   .text-center {
     text-align: center;
   }
+  .text-left {
+    text-align: left;
+  }
   .font-mono {
     font-family: var(--font-mono);
   }
@@ -859,8 +849,14 @@
   .text-\[\#000000\] {
     color: #000000;
   }
+  .text-\[\#7c1f1f\] {
+    color: #7c1f1f;
+  }
   .text-\[\#333333\] {
     color: #333333;
+  }
+  .text-\[\#\] {
+    color: #;
   }
   .text-black {
     color: var(--color-black);
@@ -891,6 +887,9 @@
   }
   .capitalize {
     text-transform: capitalize;
+  }
+  .uppercase {
+    text-transform: uppercase;
   }
   .ordinal {
     --tw-ordinal: ordinal;
@@ -1170,6 +1169,11 @@
   .md\:text-\[\#E7E7E7\] {
     @media (width >= 48rem) {
       color: #E7E7E7;
+    }
+  }
+  .md\:text-\[\#E35454\] {
+    @media (width >= 48rem) {
+      color: #E35454;
     }
   }
   .md\:brightness-100 {
@@ -1487,6 +1491,18 @@ h2 {
   font-size: 14pt;
   font-weight: 600;
   line-height: 50px;
+  letter-spacing: 7%;
+}
+.event-title {
+  font-family: Noto Sans;
+  font-size: 13pt;
+  font-weight: 600;
+  letter-spacing: 7%;
+}
+.event-time {
+  font-family: Noto Sans;
+  font-size: 10pt;
+  font-weight: 600;
   letter-spacing: 7%;
 }
 button {

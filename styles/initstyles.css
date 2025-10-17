@@ -39,6 +39,16 @@ h2 {
     line-height: 50px; letter-spacing: 7%;
 }
 
+.event-title {
+    font-family: Noto Sans; font-size: 13pt; font-weight: 600;
+    letter-spacing: 7%
+}
+
+.event-time {
+    font-family: Noto Sans; font-size: 10pt; font-weight: 600;
+    letter-spacing: 7%
+}
+
 button { 
     padding-left: 15px; padding-right: 15px; 
     font-family: Noto Sans; font-weight: 600; 
