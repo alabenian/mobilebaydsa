@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-16T23:38:44-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mobile Bay DSA</title><subtitle>Website for the Mobile Bay chapter of Democratic Socialists of America.</subtitle><entry><title type="html">Swoletariat</title><link href="http://localhost:4000/events/2025/10/22/swoletariat.html" rel="alternate" type="text/html" title="Swoletariat" /><published>2025-10-22T00:00:00-05:00</published><updated>2025-10-22T00:00:00-05:00</updated><id>http://localhost:4000/events/2025/10/22/swoletariat</id><content type="html" xml:base="http://localhost:4000/events/2025/10/22/swoletariat.html"><![CDATA[<p>Mobile Bay DSA members are holding a “Swoletariat” fitness and leftist outreach at Medal of Honor Park on October 22, as part of a series of events recurring every other Wednesday. The meeting is public for all interested, including non-DSA members.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-17T02:45:48-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mobile Bay DSA</title><subtitle>Website for the Mobile Bay chapter of Democratic Socialists of America.</subtitle><entry><title type="html">Swoletariat</title><link href="http://localhost:4000/events/2025/10/22/swoletariat.html" rel="alternate" type="text/html" title="Swoletariat" /><published>2025-10-22T00:00:00-05:00</published><updated>2025-10-22T00:00:00-05:00</updated><id>http://localhost:4000/events/2025/10/22/swoletariat</id><content type="html" xml:base="http://localhost:4000/events/2025/10/22/swoletariat.html"><![CDATA[<p>Mobile Bay DSA members are holding a “Swoletariat” fitness and leftist outreach at Medal of Honor Park on October 22, as part of a series of events recurring every other Wednesday. The meeting is public for all interested, including non-DSA members.</p>
 
-<div id="leaflet-map-d42cf224b96940d5a14a4bce9e8321c6" class="leaflet-map"></div>
+<div id="leaflet-map-25be0a67f5dbef68c8f4e05ea9b5ebd7" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -11,7 +11,7 @@
                  "zoom" : 10} ;
     var blockLeafletItems = [
     
-    {id: "baaf220132d3bb423836283a10a292fd",
+    {id: "5db9ab952511f6cb419196100ea55ce2",
               type: "LeafletMarker",
               value: { "latitude" : 30.656564,
                        "longitude" : -88.181934,
@@ -20,7 +20,7 @@
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-d42cf224b96940d5a14a4bce9e8321c6";
+    var defaultMapElId = "leaflet-map-25be0a67f5dbef68c8f4e05ea9b5ebd7";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -153,7 +153,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map d42cf224b96940d5a14a4bce9e8321c6 with these args:");
+        console.log("Creating map 25be0a67f5dbef68c8f4e05ea9b5ebd7 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1055,7 +1055,7 @@
 })();
 </script>]]></content><author><name></name></author><category term="events" /><summary type="html"><![CDATA[Mobile Bay DSA members are holding a “Swoletariat” fitness and leftist outreach at Medal of Honor Park on October 22, as part of a series of events recurring every other Wednesday. The meeting is public for all interested, including non-DSA members.]]></summary></entry><entry><title type="html">No Kings</title><link href="http://localhost:4000/events/2025/10/18/no-kings.html" rel="alternate" type="text/html" title="No Kings" /><published>2025-10-18T00:00:00-05:00</published><updated>2025-10-18T00:00:00-05:00</updated><id>http://localhost:4000/events/2025/10/18/no-kings</id><content type="html" xml:base="http://localhost:4000/events/2025/10/18/no-kings.html"><![CDATA[<p>There will be two “No Kings” protests around the Mobile Bay on October 18: one in Baldwin County, at Highway 98 &amp; Fairhope Avenue from 9:30 AM CT; and one in Mobile County, at Government Plaza from 4:00 PM CT.</p>
 
-<div id="leaflet-map-90727e38e2c89f096e8a24136c472afa" class="leaflet-map"></div>
+<div id="leaflet-map-eb2b33917bf51c58c10bb79de8b667ec" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -1066,13 +1066,13 @@
                  "zoom" : 10} ;
     var blockLeafletItems = [
 
-    {id: "36f4aec8c3c825e4f54ffe6877143307",
+    {id: "e3cf68b592cabb1e37f37001484d0e16",
               type: "LeafletMarker",
               value: { "latitude" : 30.523655,
                     "longitude" : -87.886146,
                     "popupContent" : "Highway 98 & Fairhope Avenue (9:30 AM CT)"} },
         
-    {id: "2670d106d9f946dea2563bf3c05f3b6d",
+    {id: "578cff4f0e227afc091bfbc451711e53",
               type: "LeafletMarker",
               value: { "latitude" : 30.689472,
                     "longitude" : -88.042803,
@@ -1081,7 +1081,7 @@
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-90727e38e2c89f096e8a24136c472afa";
+    var defaultMapElId = "leaflet-map-eb2b33917bf51c58c10bb79de8b667ec";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -1214,7 +1214,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 90727e38e2c89f096e8a24136c472afa with these args:");
+        console.log("Creating map eb2b33917bf51c58c10bb79de8b667ec with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -2116,7 +2116,7 @@
 })();
 </script>]]></content><author><name></name></author><category term="events" /><summary type="html"><![CDATA[There will be two “No Kings” protests around the Mobile Bay on October 18: one in Baldwin County, at Highway 98 &amp; Fairhope Avenue from 9:30 AM CT; and one in Mobile County, at Government Plaza from 4:00 PM CT.]]></summary></entry><entry><title type="html">Interest Meeting</title><link href="http://localhost:4000/events/2025/10/11/interest-meeting.html" rel="alternate" type="text/html" title="Interest Meeting" /><published>2025-10-11T00:00:00-05:00</published><updated>2025-10-11T00:00:00-05:00</updated><id>http://localhost:4000/events/2025/10/11/interest-meeting</id><content type="html" xml:base="http://localhost:4000/events/2025/10/11/interest-meeting.html"><![CDATA[<p>There is an interest meeting on October 11 from 10:00 AM to 12:00 PM CDT, at the Fairhope Municipal Pier (1 Fairhope Ave, Fairhope 36531). The meeting is public for all interested, including non-DSA members.</p>
 
-<div id="leaflet-map-04f4203e3f5b57017e049e8bae78423b" class="leaflet-map"></div>
+<div id="leaflet-map-b7af4e4bf04c62b84ba581cbfe38d677" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -2127,7 +2127,7 @@
                  "zoom" : 10} ;
     var blockLeafletItems = [
     
-    {id: "3943f0962d4e4b70cba460184d33504b",
+    {id: "c632cb651d53e7b457aa380e1c67c48a",
               type: "LeafletMarker",
               value: { "latitude" : 30.524965,
                        "longitude" : -87.914878,
@@ -2136,7 +2136,7 @@
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-04f4203e3f5b57017e049e8bae78423b";
+    var defaultMapElId = "leaflet-map-b7af4e4bf04c62b84ba581cbfe38d677";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -2269,7 +2269,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 04f4203e3f5b57017e049e8bae78423b with these args:");
+        console.log("Creating map b7af4e4bf04c62b84ba581cbfe38d677 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
