@@ -327,6 +327,9 @@
   .-m-px {
     margin: -1px;
   }
+  .m-\[0pt\] {
+    margin: 0pt;
+  }
   .m-\[5pt\] {
     margin: 5pt;
   }
@@ -354,6 +357,9 @@
   .mr-\[2px\] {
     margin-right: 2px;
   }
+  .mr-\[10pt\] {
+    margin-right: 10pt;
+  }
   .mr-\[12\.5\%\] {
     margin-right: 12.5%;
   }
@@ -371,6 +377,9 @@
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
+  }
+  .ml-\[10pt\] {
+    margin-left: 10pt;
   }
   .ml-\[11\.5\%\] {
     margin-left: 11.5%;
@@ -568,8 +577,14 @@
   .items-start {
     align-items: flex-start;
   }
+  .justify-between {
+    justify-content: space-between;
+  }
   .justify-center {
     justify-content: center;
+  }
+  .justify-stretch {
+    justify-content: stretch;
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
