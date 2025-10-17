@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="setup.html"/>
+<link rel="next" href="basic-setup.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -82,7 +82,13 @@
 <li class="chapter" data-level="1.1" data-path="basic-hosting-information.html"><a href="basic-hosting-information.html#github-pages-and-potential-alternatives"><i class="fa fa-check"></i><b>1.1</b> Github Pages and Potential Alternatives</a></li>
 </ul></li>
 <li class="part"><span><b>II Basic Structure &amp; Working on the Repository</b></span></li>
-<li class="chapter" data-level="2" data-path="setup.html"><a href="setup.html"><i class="fa fa-check"></i><b>2</b> Setup</a></li>
+<li class="chapter" data-level="2" data-path="basic-setup.html"><a href="basic-setup.html"><i class="fa fa-check"></i><b>2</b> Basic Setup</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="basic-setup.html"><a href="basic-setup.html#getting-started"><i class="fa fa-check"></i><b>2.1</b> Getting Started</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="basic-setup.html"><a href="basic-setup.html#tldr-just-give-me-the-instructions-already"><i class="fa fa-check"></i><b>2.1.1</b> TLDR (“Just give me the instructions already!”)</a></li>
+</ul></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -114,7 +120,7 @@
 <p>This should then automatically add a <code>CNAME</code> document containing “<code>mobilebaydsa.org</code>” to the repository. The only other setting I’ve changed here is to have it deploy from the <code>/docs/</code> folder of the repository rather than the root. Here <code>/docs/</code> is just a renamed version of the <code>/_site/</code> output of Jekyll; this is deployed as a static site pre-built by Jekyll locally rather than one where Github runs Jekyll itself after changes are made to the repository, due to an incompatibility with one of the plugins I was using for our events posts (jekyll-leaflet). <em>I will explain this more later, but for now, it’s not relevant.</em></p>
 <div id="github-pages-and-potential-alternatives" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> Github Pages and Potential Alternatives<a href="basic-hosting-information.html#github-pages-and-potential-alternatives" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Github Pages is a nice, free choice of hosting which gives us maximal control over the website as mentioned before, but it can be somewhat daunting and even inaccessible to anyone who isn’t already used to working with websites this way. The biggest con besides this is the fact that, on the free plan, all contents of the site have to be public unless an external service is used to store private, member-only information. Despite the extra difficulty of getting set up for those who would already have access, it’s arguably more democratic than any other hosting service – changes are published to the site when someone makes changes on their own download of the repository and sends them to Github through a <strong>commit</strong> with details of the changes they made to a local <strong>branch</strong> via the Github Desktop app (or via the command line), before making a <strong>push request</strong> that, when accepted, will publish them to the <strong>main</strong> branch and thereby the official website. The push request can be accepted by the owner (currently “alabenian,” but could be transferred to an official Mobile Bay DSA account) or anyone who has been listed as a collaborator on the project. This setup has the benefit of allowing <em>anyone</em> to suggest changes to the website to be confirmed by authorized accounts. This way everyone has a voice to publish blog posts, new pages, design ideas, etc. to the site such that official collaborators can see every change that has been made and prevent security problems. I cited inaccessibility of editing as the main downside, but that’s not too hard to get around either: with some effort I can make a separate service that allows for limited visual editing and makes automatic push requests for those changes.</p>
+<p>Github Pages is a nice, free choice of hosting which gives us maximal control over the website as mentioned before, but it can be somewhat daunting and even inaccessible to anyone who isn’t already used to working with websites this way. The biggest con besides this is the fact that, on the free plan, all contents of the site have to be public unless an external service is used to store private, member-only information. Despite the extra difficulty of getting set up for those who would already have access, it’s arguably more democratic than any other hosting service – changes are published to the site when someone makes changes on their own download of the repository and sends them to Github through a <strong>commit</strong> with details of the changes they made to a local <strong>branch</strong> via the Github Desktop app (or via the command line), before making a <strong>push request</strong> that, when accepted, will publish them to the <strong>main</strong> branch and thereby the official website. The push request can be accepted by the owner (currently “alabenian,” but could be transferred to an official Mobile Bay DSA account) or anyone who has been listed as a collaborator on the project. This setup has the benefit of allowing <em>anyone</em> to suggest changes to the website to be confirmed by authorized accounts. This way everyone has a voice to publish blog posts, new pages, design ideas, etc. to the site such that official collaborators can see every change and prevent security problems. I cited inaccessibility of editing as the main downside, but that’s not too hard to get around either: with some effort I can make a separate service that allows for limited visual editing and makes automatic push requests for those changes.</p>
 <p>One alternative would be a site builder like Wordpress.com which allows easier visual editing and supports blogs, etc. the same as Jekyll. Wordpress is especially nice because it would allow us to include member-only content on the website without a separate service, secured either by password or a whitelist of Wordpress accounts. Wordpress does not allow free sites to use custom domains, however, and the cheapest plan that <em>does</em> is priced at $96/year. Godaddy has a forwarding feature that would let us send anyone at <code>mobilebaydsa.org</code> to the Wordpress site, though I don’t know how this would affect the site’s presence in Google searches. The other major differences to consider are restrictions on design (which can also be removed with a $24/year custom CSS add-on) and a Wordpress watermark that comes with the free plan (I’ve seen this on other DSA chapter sites, and it’s not <em>too</em> bad).</p>
 
 </div>
@@ -128,7 +134,7 @@
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="setup.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="basic-setup.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

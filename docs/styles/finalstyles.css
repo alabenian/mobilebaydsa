@@ -45,7 +45,6 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-sm: 0.25rem;
-    --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 0.15);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -210,6 +209,17 @@
   .visible {
     visibility: visible;
   }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
   .absolute {
     position: absolute;
   }
@@ -327,12 +337,6 @@
   .-m-px {
     margin: -1px;
   }
-  .m-\[0pt\] {
-    margin: 0pt;
-  }
-  .m-\[5pt\] {
-    margin: 5pt;
-  }
   .m-\[10pt\] {
     margin: 10pt;
   }
@@ -357,14 +361,8 @@
   .mr-\[2px\] {
     margin-right: 2px;
   }
-  .mr-\[10pt\] {
-    margin-right: 10pt;
-  }
   .mr-\[12\.5\%\] {
     margin-right: 12.5%;
-  }
-  .mr-\[20pt\] {
-    margin-right: 20pt;
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -378,14 +376,8 @@
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
-  .ml-\[10pt\] {
-    margin-left: 10pt;
-  }
   .ml-\[11\.5\%\] {
     margin-left: 11.5%;
-  }
-  .ml-\[20pt\] {
-    margin-left: 20pt;
   }
   .ml-auto {
     margin-left: auto;
@@ -425,6 +417,14 @@
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
+  }
+  .size-2 {
+    width: calc(var(--spacing) * 2);
+    height: calc(var(--spacing) * 2);
+  }
+  .size-3 {
+    width: calc(var(--spacing) * 3);
+    height: calc(var(--spacing) * 3);
   }
   .h-1 {
     height: calc(var(--spacing) * 1);
@@ -519,6 +519,9 @@
   .flex-grow {
     flex-grow: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .translate-x-2 {
     --tw-translate-x: calc(var(--spacing) * 2);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -582,9 +585,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .justify-stretch {
-    justify-content: stretch;
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
@@ -1120,11 +1120,6 @@
   .md\:left-\[40\%\] {
     @media (width >= 48rem) {
       left: 40%;
-    }
-  }
-  .md\:m-\[0pt\] {
-    @media (width >= 48rem) {
-      margin: 0pt;
     }
   }
   .md\:hidden {
