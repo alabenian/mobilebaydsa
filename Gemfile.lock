@@ -243,7 +243,7 @@ DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.4.1)
   jekyll-feed (~> 0.12)
-  jekyll-leaflet
+  jekyll-leaflet (~> 0.2.1)
   jekyll-scholar (~> 7.2, >= 7.2.1)
   jekyll-seo-tag (~> 2.8)
   jekyll-sitemap (~> 1.4)
