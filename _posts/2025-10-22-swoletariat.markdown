@@ -12,6 +12,6 @@ Mobile Bay DSA members are holding a "Swoletariat" fitness and leftist outreach 
     
     {% leaflet_marker { "latitude" : 30.656564,
                        "longitude" : -88.181934,
-                       "popupContent" : "Fairhope Municipal Pier"} %}
+                       "popupContent" : "Medal of Honor Park"} %}
 
 {% endleaflet_map %}
