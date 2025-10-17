@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Basic Setup | Website Documentation | Mobile Bay DSA</title>
+  <meta name="description" content="This is a short book about our website for other members of Mobile Bay DSA." />
+  <meta name="generator" content="bookdown 0.45 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Basic Setup | Website Documentation | Mobile Bay DSA" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is a short book about our website for other members of Mobile Bay DSA." />
+  <meta name="github-repo" content="alabenian/mobilebaydsa.org" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Basic Setup | Website Documentation | Mobile Bay DSA" />
+  
+  <meta name="twitter:description" content="This is a short book about our website for other members of Mobile Bay DSA." />
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="basic-hosting-information.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./index.html">Website Documentation | Mobile Bay DSA</a></li>
+
+<li class="divider"></li>
+<li class="part"><span><b>I Hosting</b></span></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="basic-hosting-information.html"><a href="basic-hosting-information.html"><i class="fa fa-check"></i><b>1</b> Basic Hosting Information</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="basic-hosting-information.html"><a href="basic-hosting-information.html#github-pages-and-potential-alternatives"><i class="fa fa-check"></i><b>1.1</b> Github Pages and Potential Alternatives</a></li>
+</ul></li>
+<li class="part"><span><b>II Basic Structure &amp; Working on the Repository</b></span></li>
+<li class="chapter" data-level="2" data-path="basic-setup.html"><a href="basic-setup.html"><i class="fa fa-check"></i><b>2</b> Basic Setup</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="basic-setup.html"><a href="basic-setup.html#getting-started"><i class="fa fa-check"></i><b>2.1</b> Getting Started</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="basic-setup.html"><a href="basic-setup.html#tldr-just-give-me-the-instructions-already"><i class="fa fa-check"></i><b>2.1.1</b> TLDR (“Just give me the instructions already!”)</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Website Documentation | Mobile Bay DSA</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="basic-setup" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Basic Setup<a href="basic-setup.html#basic-setup" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="getting-started" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Getting Started<a href="basic-setup.html#getting-started" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you want to make small changes to the repository like editing the text on certain pages, you can do this directly through the Github page <a href="https://github.com/alabenian/mobilebaydsa" class="uri">https://github.com/alabenian/mobilebaydsa</a> without going through the rest of the setup listed here. Just open the markdown file you want to edit on the Github repository site, click the edit icon on the top right, make the changes you want, and finally commit them and make a push request.</p>
+<p>If you want to make larger changes to the repository, you’ll first need to establish a local branch to work on. I’m writing this guide under the assumption that you’ve <em>never</em> used Github before, in which case I’d recommend working through Github Desktop and Visual Studio Code. After downloading those apps, open Github Desktop, set up a Github account and follow the app’s instructions to clone the repository into whatever directory you’d like using <code>alabenian/mobilebaydsa</code>. Then open the folder with Visual Studio Code, and install the following command-line tools in your terminal (either as a standalone “command prompt” window or from the bottom terminal tab in VSCode).</p>
+<p>There are three command-line tools in total used to build the site: <strong>Jekyll</strong>, <strong>Tailwind</strong>, and <strong>Markwhen</strong>. Installing Jekyll takes the greatest priority, as it is necessary to build the site at all (if we switched to having Github build the site with Jekyll itself, installing it locally wouldn’t be 100% necessary, but it’s still nice to be able to view what you’ve done before publishing). Tailwind is second, because it creates the <code>.css</code> file used by the rest of the site for styling. Because this file has already been created, Tailwind is only necessary for <em>editing</em> it. Finally, Markwhen is only used to render and update the timeline used on the Calendar page of the site, and is only necessary to someone who is adding or removing events on the calendar.</p>
+<p><strong>Jekyll</strong> (<a href="https://jekyllrb.com/" class="uri">https://jekyllrb.com/</a>) simplifies work on the site by structuring the files by root directory markdown (or HTML) files containing the contents of each page, <code>_layout</code> HTML files which are referenced in each to determine how the contents are presented, and <code>_include</code> HTML files which are referenced in either the layout or content files to display some extra piece of the website (e.g. a navbar or a commonly-occurring button or icon). The resulting file structure of the site will be discussed further in “Repository Structure.” It requires Ruby (<a href="https://www.ruby-lang.org/en/documentation/installation/">installation information here</a>) and RubyGems (which should be included with Ruby) to install via <code>gem install bundler jekyll</code> in the terminal. After installation, the site can be built by opening the repository folder in the terminal (or <code>cd</code>-ing into it; this is already done if you’ve opened the entire folder in VSCode, so you can use the terminal tab at the bottom) and running <code>bundle exec jekyll serve</code>. I’ve used some additional plugins on the site, so it’ll throw an error on the first build and prompt you to install those; from there any work with Jekyll should be smooth sailing!</p>
+<p><strong>Tailwind</strong> (<a href="https://tailwindcss.com/" class="uri">https://tailwindcss.com/</a>) simplifies writing CSS for the site by supplying a set of classes with short and easy-to-remember names. It can be installed as a CLI tool with <code>npm install tailwindcss @tailwindcss/cli</code>. (This uses <code>npm</code>, so unfortunately you’ll need to install Node first: <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" class="uri">https://docs.npmjs.com/downloading-and-installing-node-js-and-npm</a>) To use it on the site, just open the folder in another terminal tab (or, again, <code>cd</code> into it) and run <code>npx @tailwindcss/cli -i ./styles/initstyles.css -o ./styles/finalstyles.css --watch</code>. It will then replace the “<code>@import "tailwindcss";</code>” in the initial styles file and watch for future changes to re-run the command in that terminal instance. This adds so much extra hassle for getting set up to edit styles, I may remove it in the future – it made the process of designing the site much easier for me because I had already installed it globally and knew its classes.</p>
+<p><strong>Markwhen</strong> renders the markwhen file <code>calendar_source/main_calendar.mw</code> into <code>calendar_source/timeline.html</code>, which is embedded on the Calendar page. Install it using <code>npm i -g @markwhen/mw</code> (this also requires Node – see instructions for Tailwind). After installation, all you need to do is run <code>mw calendar_source/main_calendar.mw calendar_source/timeline.html</code> to update the timeline if changes to <code>main_calendar.mw</code> have been made. See the “Events &amp; Posts” chapter for more information about editing the timeline.</p>
+<div id="tldr-just-give-me-the-instructions-already" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> TLDR (“Just give me the instructions already!”)<a href="basic-setup.html#tldr-just-give-me-the-instructions-already" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Create a Github account</li>
+<li>Download and install Github Desktop and Visual Studio Code</li>
+<li>Open Github Desktop and follow the instructions to log in and clone a repository. Use the link <code>https://github.com/alabenian/mobilebaydsa</code> or <code>alabenian/mobilebaydsa</code>.</li>
+<li>Open Visual Studio Code, and within it, open the folder you created by cloning the repository in the previous step. Tell VSCode that you trust the author, then find the “terminal” tab at the bottom of the window.</li>
+<li>(Windows) Download and install a Ruby release from <a href="https://rubyinstaller.org/downloads/" class="uri">https://rubyinstaller.org/downloads/</a>.</li>
+</ol>
+<ul>
+<li>(Mac) Use Homebrew (if you don’t already have it installed, first run <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code>) to update your Mac’s built-in installation of Ruby: <code>brew update</code> and then <code>brew install ruby</code> in your VSCode terminal.</li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li>(Windows) Download and install a release of NVM Windows from <a href="https://github.com/coreybutler/nvm-windows/releases" class="uri">https://github.com/coreybutler/nvm-windows/releases</a>. Then run “<code>nvm install latest</code> in your VSCode terminal.</li>
+</ol>
+<ul>
+<li>(Mac) Run the NVM install script: <code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash</code></li>
+</ul>
+<ol start="7" style="list-style-type: decimal">
+<li>Still in your VSCode terminal, run these commands:</li>
+</ol>
+<ul>
+<li><code>gem install bundler jekyll</code></li>
+<li><code>npm install tailwindcss @tailwindcss/cli</code></li>
+<li><code>npm install @markwhen/mw</code></li>
+</ul>
+<ol start="8" style="list-style-type: decimal">
+<li>Mouse over to the “+” button to the right of the terminal and click it twice to create two more terminal tabs. In each of the tabs now open, run one of the following commands:</li>
+</ol>
+<ul>
+<li><code>bundle exec jekyll serve</code> – This will prompt you to install some additional plugins. Afterwards, it will build and serve your website to some localhost port. Take note of the “server address” it gives you immediately after this, open it in your browser, and bookmark it if necessary for future reference to see the effects of your changes.</li>
+<li><code>npx @tailwindcss/cli -i styles/initstyles.css -o styles/finalstyles.css --watch</code> – This will add any Tailwind classes used throughout the website to the base stylesheet, generating finalstyles.css, which is used as the main stylesheet for the whole website.</li>
+<li><code>mw calendar_source/main_calendar.mw calendar_source/timeline.html</code> – This will re-render the timeline used on the Calendar page, which has not yet been edited. Adding or removing events is as simple as editing <code>calendar_source/main_calendar.mw</code> and then re-running this command, though I’d like it to be standard practice to create an event post complete with a map of the location to which each event on the timeline may link.</li>
+</ul>
+<ol start="9" style="list-style-type: decimal">
+<li>Start working!</li>
+</ol>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="basic-hosting-information.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

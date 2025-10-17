@@ -113,11 +113,11 @@ Github makes things easy to set up on its end: we publish the site to Github as 
 
 \includegraphics[width=0.75\linewidth,height=\textheight,keepaspectratio]{github-pages.png}
 
-This should then automatically add a \texttt{CNAME} document containing ``\texttt{mobilebaydsa.org}'' to the repository. The only other setting I've changed here is to have it deploy from the \texttt{/docs/} folder of the repository rather than the root. Here \texttt{/docs/} is just a renamed version of the \texttt{/\_site/} output of Jekyll; this is deployed as a static site pre-built by Jekyll locally rather than one where Github runs Jekyll itself after changes are made to the repository, due to an incompatibility with one of the plugins I was using for our events posts (jekyll-leaflet). \emph{I will explain this more later, but for now, it's not relevant.}
+This should then automatically add a \texttt{CNAME} document containing ``\texttt{mobilebaydsa.org}'' to the repository. The only other setting I've changed here is to have it deploy from the \texttt{/docs/} folder of the repository rather than the root. Here \texttt{/docs/} is just a renamed version of the \texttt{/\_site/} output of Jekyll; this is temporarily deployed as a static site pre-built by Jekyll locally rather than one where Github runs Jekyll itself after changes are made to the repository, due to an incompatibility with one of the plugins I was using for our events posts (jekyll-leaflet). \emph{This is going to be changed later, so it's not relevant here.}
 
 \section{Github Pages and Potential Alternatives}\label{github-pages-and-potential-alternatives}
 
-Github Pages is a nice, free choice of hosting which gives us maximal control over the website as mentioned before, but it can be somewhat daunting and even inaccessible to anyone who isn't already used to working with websites this way. The biggest con besides this is the fact that, on the free plan, all contents of the site have to be public unless an external service is used to store private, member-only information. Despite the extra difficulty of getting set up for those who would already have access, it's arguably more democratic than any other hosting service -- changes are published to the site when someone makes changes on their own download of the repository and sends them to Github through a \textbf{commit} with details of the changes they made to a local \textbf{branch} via the Github Desktop app (or via the command line), before making a \textbf{push request} that, when accepted, will publish them to the \textbf{main} branch and thereby the official website. The push request can be accepted by the owner (currently ``alabenian,'' but could be transferred to an official Mobile Bay DSA account) or anyone who has been listed as a collaborator on the project. This setup has the benefit of allowing \emph{anyone} to suggest changes to the website to be confirmed by authorized accounts. This way everyone has a voice to publish blog posts, new pages, design ideas, etc. to the site such that official collaborators can see every change and prevent security problems. I cited inaccessibility of editing as the main downside, but that's not too hard to get around either: with some effort I can make a separate service that allows for limited visual editing and makes automatic push requests for those changes.
+Github Pages is a nice, free choice of hosting which gives us maximal control over the website as mentioned before, but it can be somewhat daunting and even inaccessible to anyone who isn't already used to working with websites this way. The biggest con besides this is the fact that, on the free plan, all contents of the site have to be public unless an external service is used to store private, member-only information. Despite the extra difficulty of getting set up for those who would already have access, it's arguably more democratic than any other hosting service -- changes are published to the site when someone makes changes on their own download of the repository and sends them to Github through a \textbf{commit} with details of the changes they made to a local \textbf{branch} via the Github Desktop app (or via the command line), before making a \textbf{push request} that, when accepted, will publish them to the \textbf{main} branch and thereby the official website. The push request can be accepted by the owner (currently ``alabenian,'' but could be transferred to an official Mobile Bay DSA account) or anyone who has been listed as a collaborator on the project. When it comes to something simple like editing text on the website, this can be done directly through the Github site by opening one of the markdown files in the root directory, clicking the edit icon, making changes, then committing them and making a push request. This setup has the benefit of allowing \emph{anyone} to suggest changes to the website to be confirmed by authorized accounts. This way everyone has a voice to publish blog posts, new pages, design ideas, etc. to the site such that official collaborators can see every change and prevent security problems.
 
 One alternative would be a site builder like Wordpress.com which allows easier visual editing and supports blogs, etc. the same as Jekyll. Wordpress is especially nice because it would allow us to include member-only content on the website without a separate service, secured either by password or a whitelist of Wordpress accounts. Wordpress does not allow free sites to use custom domains, however, and the cheapest plan that \emph{does} is priced at \$96/year. Godaddy has a forwarding feature that would let us send anyone at \texttt{mobilebaydsa.org} to the Wordpress site, though I don't know how this would affect the site's presence in Google searches. The other major differences to consider are restrictions on design (which can also be removed with a \$24/year custom CSS add-on) and a Wordpress watermark that comes with the free plan (I've seen this on other DSA chapter sites, and it's not \emph{too} bad).
 
@@ -127,7 +127,9 @@ One alternative would be a site builder like Wordpress.com which allows easier v
 
 \section{Getting Started}\label{getting-started}
 
-If you want to make changes to the repository, you'll first need to establish a local branch to work on. I'm writing this guide under the assumption that you've \emph{never} used Github before, in which case I'd recommend working through Github Desktop and Visual Studio Code. After downloading those apps, open Github Desktop, set up a Github account and follow the app's instructions to clone the repository into whatever directory you'd like using its link \url{https://github.com/alabenian/mobilebaydsa}. Then open the folder with Visual Studio Code, and install the following command-line tools in your terminal (either as a standalone ``command prompt'' window or from the bottom terminal tab in VSCode).
+If you want to make small changes to the repository like editing the text on certain pages, you can do this directly through the Github page \url{https://github.com/alabenian/mobilebaydsa} without going through the rest of the setup listed here. Just open the markdown file you want to edit on the Github repository site, click the edit icon on the top right, make the changes you want, and finally commit them and make a push request.
+
+If you want to make larger changes to the repository, you'll first need to establish a local branch to work on. I'm writing this guide under the assumption that you've \emph{never} used Github before, in which case I'd recommend working through Github Desktop and Visual Studio Code. After downloading those apps, open Github Desktop, set up a Github account and follow the app's instructions to clone the repository into whatever directory you'd like using \texttt{alabenian/mobilebaydsa}. Then open the folder with Visual Studio Code, and install the following command-line tools in your terminal (either as a standalone ``command prompt'' window or from the bottom terminal tab in VSCode).
 
 There are three command-line tools in total used to build the site: \textbf{Jekyll}, \textbf{Tailwind}, and \textbf{Markwhen}. Installing Jekyll takes the greatest priority, as it is necessary to build the site at all (if we switched to having Github build the site with Jekyll itself, installing it locally wouldn't be 100\% necessary, but it's still nice to be able to view what you've done before publishing). Tailwind is second, because it creates the \texttt{.css} file used by the rest of the site for styling. Because this file has already been created, Tailwind is only necessary for \emph{editing} it. Finally, Markwhen is only used to render and update the timeline used on the Calendar page of the site, and is only necessary to someone who is adding or removing events on the calendar.
 
@@ -152,12 +154,32 @@ There are three command-line tools in total used to build the site: \textbf{Jeky
   Open Visual Studio Code, and within it, open the folder you created by cloning the repository in the previous step. Tell VSCode that you trust the author, then find the ``terminal'' tab at the bottom of the window.
 \item
   (Windows) Download and install a Ruby release from \url{https://rubyinstaller.org/downloads/}.
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
 \item
   (Mac) Use Homebrew (if you don't already have it installed, first run \texttt{/bin/bash\ -c\ "\$(curl\ -fsSL\ https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"}) to update your Mac's built-in installation of Ruby: \texttt{brew\ update} and then \texttt{brew\ install\ ruby} in your VSCode terminal.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
 \item
   (Windows) Download and install a release of NVM Windows from \url{https://github.com/coreybutler/nvm-windows/releases}. Then run ``\texttt{nvm\ install\ latest} in your VSCode terminal.
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
 \item
   (Mac) Run the NVM install script: \texttt{curl\ -o-\ https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh\ \textbar{}\ bash}
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
 \item
   Still in your VSCode terminal, run these commands:
 \end{enumerate}
