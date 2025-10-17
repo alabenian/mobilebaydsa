@@ -1,7 +1,6 @@
 ---
 layout: event
 title:  "No Kings"
-date:   2025-10-18
 time: 10/18/2025 9:30 AM / 4:00 PM
 place: "Highway 98 & Fairhope Avenue / Government Plaza"
 categories: events

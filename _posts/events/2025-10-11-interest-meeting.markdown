@@ -1,7 +1,6 @@
 ---
 layout: event
 title:  "Interest Meeting"
-date:   2025-10-11
 time: 10/11/2025 10:00 AM - 12:00 PM
 place: "Fairhope Municipal Pier"
 categories: events

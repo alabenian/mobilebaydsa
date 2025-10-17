@@ -1,7 +1,6 @@
 ---
 layout: event
 title:  "Swoletariat"
-date:   2025-10-22
 time: 10/22/2025 5:30 PM - 7:30 PM
 place: "Medal of Honor Park"
 categories: events
