@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Basic Hosting Information | Website Documentation | Mobile Bay DSA</title>
+  <meta name="description" content="This is a short book about our website for other members of Mobile Bay DSA." />
+  <meta name="generator" content="bookdown 0.45 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Basic Hosting Information | Website Documentation | Mobile Bay DSA" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is a short book about our website for other members of Mobile Bay DSA." />
+  <meta name="github-repo" content="alabenian/mobilebaydsa.org" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Basic Hosting Information | Website Documentation | Mobile Bay DSA" />
+  
+  <meta name="twitter:description" content="This is a short book about our website for other members of Mobile Bay DSA." />
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="setup.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./index.html">Website Documentation | Mobile Bay DSA</a></li>
+
+<li class="divider"></li>
+<li class="part"><span><b>I Hosting</b></span></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="basic-hosting-information.html"><a href="basic-hosting-information.html"><i class="fa fa-check"></i><b>1</b> Basic Hosting Information</a></li>
+<li class="part"><span><b>II Basic Structure &amp; Working on the Repository</b></span></li>
+<li class="chapter" data-level="2" data-path="setup.html"><a href="setup.html"><i class="fa fa-check"></i><b>2</b> Setup</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Website Documentation | Mobile Bay DSA</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="basic-hosting-information" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Basic Hosting Information<a href="basic-hosting-information.html#basic-hosting-information" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Our domain name <code>mobilebaydsa.org</code> is registered through Godaddy and currently presents the Github Pages site at <a href="https://alabenian.github.io/mobilebaydsa" class="uri">https://alabenian.github.io/mobilebaydsa</a>. It could present any other source, but I chose to use Pages because our Godaddy plan did not come with a site builder and other options would cost some money while Pages was free, and because it gives us complete control over the site as long as it’s static (i.e. as long as we don’t need to store data on the fly, and all processing can be left to the user’s computer, unless an additional outside service is used). Godaddy is told where to get the website using four <code>A</code>-type “@” DNS records which give it the IP range of Github and one <code>CNAME</code>-type “www” record which tells it to use <code>alabenian.github.io</code>:</p>
+<p><img src="a-records.png" style="width:100.0%" />
+<img src="cname-record.png" style="width:100.0%" /></p>
+<p>All this is available from Domain/DNS/DNS Records at the <code>mobilebaydsa.org</code> control page in Godaddy; a more in-depth tutorial is available at <a href="https://medium.com/@nbblks/how-to-set-up-godaddy-domain-with-github-pages-eaa65f88a8ec">this Medium page</a>. Part of the original process involved also deleting the DNS records for the fallback site generated by Godaddy.</p>
+<p>Github makes things easy to set up on its end: we publish the site to Github as a repository (<a href="https://github.com/alabenian/mobilebaydsa" class="uri">https://github.com/alabenian/mobilebaydsa</a>), enable Github Pages, which will automatically deploy it to <code>[username].github.io/[repository name]</code>, then tell it to use the domain name <code>mobilebaydsa.org</code> and enforce HTTPS:</p>
+<p><img src="github-pages.png" style="width:75.0%" /></p>
+<p>This should then automatically add a <code>CNAME</code> document containing “<code>mobilebaydsa.org</code>” to the repository. The only other setting I’ve changed here is to have it deploy from the <code>/docs/</code> folder of the repository rather than the root. Here <code>/docs/</code> is just a renamed version of the <code>/_site/</code> output of Jekyll; this is deployed as a static site pre-built by Jekyll locally rather than one where Github runs Jekyll itself after changes are made to the repository, due to an incompatibility with one of the plugins I was using for our events posts (jekyll-leaflet). <em>I will explain this more later, but for now, it’s not relevant.</em></p>
+
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="setup.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>
