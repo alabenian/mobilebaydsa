@@ -20,7 +20,7 @@ If you live in Mobile or Baldwin County, you can [join national DSA](https://www
 <br />
 
 ## UPCOMING EVENTS
-
+<!-- goes through each event in _posts/events, checks that it is a *future DSA event*, and displays an "event card" with the details -->
 {% for post in site.categories.events reversed %}
 {% if post.eventtype == "dsa future" %}
 {% include eventcard.html url=post.url time=post.time place=post.place title=post.title description=post.description %}
