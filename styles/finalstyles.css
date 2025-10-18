@@ -680,8 +680,20 @@
   .bg-\[rgba\(80\,18\,16\,0\.4\)\] {
     background-color: rgba(80,18,16,0.4);
   }
+  .bg-\[rgba\(120\,18\,16\,0\.3\)\] {
+    background-color: rgba(120,18,16,0.3);
+  }
   .bg-\[rgba\(120\,18\,16\,0\.4\)\] {
     background-color: rgba(120,18,16,0.4);
+  }
+  .bg-\[rgba\(180\,18\,16\,0\.2\)\] {
+    background-color: rgba(180,18,16,0.2);
+  }
+  .bg-\[rgba\(180\,18\,16\,0\.3\)\] {
+    background-color: rgba(180,18,16,0.3);
+  }
+  .bg-\[rgba\(180\,18\,16\,0\.4\)\] {
+    background-color: rgba(180,18,16,0.4);
   }
   .bg-blue-300 {
     background-color: var(--color-blue-300);
